@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP Business Data Cloud: Data Strategy for AI | Frontino IT</title>
+  <meta name="description" content="What SAP Business Data Cloud is, the latest Databricks, Snowflake and BigQuery integrations, and why SAP data is the foundation for AI agents.">
+  <link rel="canonical" href="https://frontinoit.com/blog-sap-business-data-cloud-ai.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/blog-sap-business-data-cloud-ai.html">
+  <meta property="og:title" content="SAP Business Data Cloud: Data Strategy for AI | Frontino IT">
+  <meta property="og:description" content="What SAP Business Data Cloud is, the latest Databricks, Snowflake and BigQuery integrations, and why SAP data is the foundation for AI agents.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP Business Data Cloud: Data Strategy for AI | Frontino IT">
+  <meta name="twitter:description" content="What SAP Business Data Cloud is, the latest Databricks, Snowflake and BigQuery integrations, and why SAP data is the foundation for AI agents.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+      "sameAs": [
+        "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+      ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://frontinoit.com/blog-sap-business-data-cloud-ai.html#article",
+      "headline": "SAP Business Data Cloud: why your data strategy now decides your AI results",
+      "description": "What SAP Business Data Cloud is, the latest Databricks, Snowflake and BigQuery integrations, and why SAP data is the foundation for AI agents.",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "datePublished": "2026-10-01",
+      "dateModified": "2026-10-01",
+      "author": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "mainEntityOfPage": "https://frontinoit.com/blog-sap-business-data-cloud-ai.html",
+      "keywords": "SAP Business Data Cloud, SAP Datasphere, SAP Databricks, SAP Snowflake, SAP data strategy",
+      "articleSection": "Data &amp; Cloud",
+      "wordCount": 373,
+      "inLanguage": "en",
+      "citation": [
+        "https://news.sap.com/2026/05/sap-bdc-accelerate-autonomous-enterprise/",
+        "https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-snowflake-and-sap-business-data/ba-p/14386550",
+        "https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-business-data-cloud-connect-for/ba-p/14441637"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://frontinoit.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAP Business Data Cloud: why your data strategy now decides your AI results",
+          "item": "https://frontinoit.com/blog-sap-business-data-cloud-ai.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Article header -->
+    <section class="hero article-hero has-hero-video" id="hero-section" aria-label="Article">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span><a href="blog.html">Blog</a><span aria-hidden="true">/</span><span>Data &amp; Cloud</span>
+          </nav>
+          <span class="hero-subtitle">Data &amp; Cloud</span>
+          <h1>SAP Business Data Cloud: why your data strategy now decides your AI results</h1>
+          <div class="article-meta article-meta-hero">
+            <span>Frontino IT</span>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <time datetime="2026-10-01">October 2026</time>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <span>3 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article body -->
+    <section class="section article-section" aria-label="Article content">
+      <div class="container">
+        <article class="article-body">
+<p class="article-intro">Every AI conversation in SAP eventually reaches the same point: data. An agent that adjusts orders or answers finance questions needs reliable data and the business context around it. That is the role SAP gives to SAP Business Data Cloud (BDC).</p>
+
+<h2>What SAP Business Data Cloud is</h2>
+<p>SAP Business Data Cloud brings SAP data together as governed <strong>data products</strong> that keep their business meaning, so analytics and AI can use them without rebuilding the semantics of every table. It builds on SAP Datasphere and SAP Analytics Cloud and, since Sapphire 2026, it is one of the three pillars of the new SAP Business AI Platform, alongside SAP BTP and SAP Business AI.</p>
+
+<h2>Recent developments</h2>
+<ul>
+  <li><strong>Databricks.</strong> BDC Connect for Databricks arrived in 2025, alongside SAP Databricks as part of BDC.</li>
+  <li><strong>Snowflake.</strong> SAP Snowflake and BDC Connect for Snowflake became generally available in 2026, with bidirectional data sharing that keeps business semantics and governance intact.</li>
+  <li><strong>Google BigQuery.</strong> BDC Connect for Google BigQuery is generally available as well.</li>
+  <li><strong>More to come.</strong> SAP HANA Cloud is becoming a core component of BDC, and BDC Connect for Amazon Athena is planned for the second half of 2026.</li>
+</ul>
+<p>The direction is clear: instead of copying SAP data into every platform, data is shared with its meaning attached, often without physically duplicating it.</p>
+
+<h2>Why this matters for AI</h2>
+<p>AI agents act on business context: which supplier, which contract, which open order, which tolerance. When that context lives in clean, governed data products, agents make better decisions and their actions are easier to explain. When it lives in spreadsheets and unofficial extracts, no model can compensate.</p>
+<div class="article-callout"><strong>No AI strategy without a data strategy.</strong> The companies that will benefit first from SAP's agents are the ones that already know where their critical data lives, who owns it and how good it is.</div>
+
+<h2>How to get your data ready</h2>
+<ol>
+  <li><strong>Start from use cases,</strong> not from tables: which decisions do you want to improve, and which data do they need?</li>
+  <li><strong>Fix data quality at the source.</strong> Master data in SAP is the foundation; cleaning it during an ERP project pays off twice.</li>
+  <li><strong>Replace unofficial extracts</strong> with governed data products and clear ownership.</li>
+  <li><strong>Connect, do not copy,</strong> wherever your analytics platform supports semantic, zero-copy sharing.</li>
+</ol>
+<div class="article-sources"><h2>Sources</h2><ul><li><a href="https://news.sap.com/2026/05/sap-bdc-accelerate-autonomous-enterprise/" target="_blank" rel="noopener noreferrer">SAP News: Accelerate the Autonomous Enterprise with SAP Business Data Cloud (May 2026)</a></li><li><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-snowflake-and-sap-business-data/ba-p/14386550" target="_blank" rel="noopener noreferrer">SAP Community: General availability of SAP Snowflake and BDC Connect for Snowflake</a></li><li><a href="https://community.sap.com/t5/technology-blog-posts-by-sap/announcing-general-availability-of-sap-business-data-cloud-connect-for/ba-p/14441637" target="_blank" rel="noopener noreferrer">SAP Community: General availability of BDC Connect for Google BigQuery</a></li></ul></div>
+
+          <aside class="article-cta">
+            <p>Want to connect your SAP data to analytics and AI the right way?</p>
+            <div class="article-cta-actions">
+              <a href="sap-btp-services.html" class="btn btn-primary">Explore SAP BTP Services</a>
+              <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- More articles -->
+    <section class="section bg-navy" aria-labelledby="more-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Keep Reading</span>
+          <h2 class="accent-title" id="more-title">More from the blog</h2>
+        </div>
+        <div class="articles-grid" role="list">
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-ai">Automation</span>
+            <h3><a href="blog-automate-po-confirmations-sap.html">Why supplier PO confirmations are still manual in SAP, and how to automate them</a></h3>
+            <p>Confirmations arrive by email, PDF and Excel, in every format and language. Here is why buyers still re-key them into SAP, and what it takes to automate the process safely.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-automate-po-confirmations-sap.html" class="read-link" aria-label="Read article: Why supplier PO confirmations are still manual in SAP, and how to automate them">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-clean-core">Clean Core</span>
+            <h3><a href="blog-clean-core-what-moves-to-btp.html">Clean core in practice: what stays in SAP, what moves to BTP and what you retire</a></h3>
+            <p>Clean core does not mean zero customisation. It means every extension has a clear, upgrade-safe home. A practical guide to deciding what stays, what moves and what goes.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-clean-core-what-moves-to-btp.html" class="read-link" aria-label="Read article: Clean core in practice: what stays in SAP, what moves to BTP and what you retire">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-grow">SAP Strategy</span>
+            <h3><a href="blog-choose-your-sap-path.html">ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path</a></h3>
+            <p>There is no single right answer for every company. A clear look at the S/4HANA deployment options, their trade-offs, and the questions that decide which path fits you.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-choose-your-sap-path.html" class="read-link" aria-label="Read article: ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

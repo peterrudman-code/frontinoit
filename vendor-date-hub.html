@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Date Hub (VDH): SAP PO Confirmation | Frontino IT</title>
+  <meta name="description" content="Automate supplier PO confirmations in SAP. VDH reads emails, PDFs and portal replies, validates them against S/4HANA and writes back, built on SAP BTP.">
+  <link rel="canonical" href="https://frontinoit.com/vendor-date-hub.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/vendor-date-hub.html">
+  <meta property="og:title" content="Vendor Date Hub (VDH): SAP PO Confirmation | Frontino IT">
+  <meta property="og:description" content="Automate supplier PO confirmations in SAP. VDH reads emails, PDFs and portal replies, validates them against S/4HANA and writes back, built on SAP BTP.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-vdh.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Vendor Date Hub by Frontino IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vendor Date Hub (VDH): SAP PO Confirmation | Frontino IT">
+  <meta name="twitter:description" content="Automate supplier PO confirmations in SAP. VDH reads emails, PDFs and portal replies, validates them against S/4HANA and writes back, built on SAP BTP.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-vdh.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+        "sameAs": [
+          "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+        ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://frontinoit.com/vendor-date-hub.html#webpage",
+      "url": "https://frontinoit.com/vendor-date-hub.html",
+      "name": "Vendor Date Hub (VDH): SAP PO Confirmation | Frontino IT",
+      "description": "Automate supplier PO confirmations in SAP. VDH reads emails, PDFs and portal replies, validates them against S/4HANA and writes back, built on SAP BTP.",
+      "isPartOf": {
+        "@id": "https://frontinoit.com/#website"
+      },
+      "about": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-01",
+      "breadcrumb": {
+        "@id": "https://frontinoit.com/vendor-date-hub.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://frontinoit.com/vendor-date-hub.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Vendor Date Hub",
+          "item": "https://frontinoit.com/vendor-date-hub.html"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://frontinoit.com/vendor-date-hub.html#software",
+      "name": "Vendor Date Hub (VDH)",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "SAP BTP (Cloud Foundry)",
+      "description": "Supplier collaboration and purchase-order confirmation orchestration around SAP S/4HANA: Supplier Portal, Intelligent Email and Buyer Control Tower.",
+      "url": "https://frontinoit.com/vendor-date-hub.html",
+      "image": "https://frontinoit.com/assets/images/og-vdh.jpg",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Vendor Date Hub demo: from supplier email to SAP",
+      "inLanguage": "en",
+      "description": "Two real cases: a supplier confirmation that syncs to SAP S/4HANA automatically, and a split delivery the buyer approves with one click.",
+      "thumbnailUrl": "https://frontinoit.com/assets/video/vdh-demo-en-poster.jpg",
+      "contentUrl": "https://frontinoit.com/assets/video/vdh-demo-en.mp4",
+      "uploadDate": "2026-09-23",
+      "duration": "PT3M4S",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Vendor Date Hub demo: del correo del proveedor a SAP",
+      "inLanguage": "es",
+      "description": "Two real cases: a supplier confirmation that syncs to SAP S/4HANA automatically, and a split delivery the buyer approves with one click.",
+      "thumbnailUrl": "https://frontinoit.com/assets/video/vdh-demo-es-poster.jpg",
+      "contentUrl": "https://frontinoit.com/assets/video/vdh-demo-es.mp4",
+      "uploadDate": "2026-09-24",
+      "duration": "PT3M21S",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link active" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero Section -->
+    <section class="hero has-hero-video" id="hero-section" aria-label="Vendor Date Hub Introduction">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="hero-subtitle">PO confirmation, orchestrated</span>
+          <h1>Vendor Date Hub (VDH)</h1>
+          <p class="lead">Every change, in context. VDH keeps the purchase-order confirmation cycle continuously aligned with SAP — across channels, systems and users.</p>
+          <div class="hero-actions">
+            <a href="#vdh-demo-section" class="btn btn-primary" id="hero-cta-primary">Watch the demo</a>
+            <a href="#vdh-how-section" class="btn btn-secondary" id="hero-cta-secondary">How it works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Outcome -->
+    <section class="section bg-darker" id="vdh-problem-section" aria-labelledby="vdh-problem-title">
+      <div class="container">
+        <div class="problem-impact-grid">
+          <div class="problem-block reveal" id="vdh-problem-block">
+            <span class="section-label">The Operational Problem</span>
+            <h2 id="vdh-problem-title">Different suppliers respond in different ways.</h2>
+            <p>Confirmations arrive by email, as PDF attachments, in Excel files or as free text — in any language. The buyer absorbs the variance:</p>
+            <ul class="pain-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Understand each response and find the purchase order it refers to.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Match it line by line against what was ordered.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Validate changes in dates and quantities.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Type the result into SAP by hand — hours of manual work every day.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="impact-block reveal" id="vdh-outcome-block">
+            <span class="section-label">Why It Matters</span>
+            <h2 class="accent-title">PO confirmation is an operational dependency.</h2>
+            <p>Supplier confirmations keep delivery and customer commitment dates realistic. When they fall behind, the effect travels beyond procurement.</p>
+            <ul class="benefit-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Production:</strong> plans built on confirmed, current delivery dates.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Sales:</strong> customer promises that hold — and customer trust.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Buyers:</strong> most confirmations handled automatically; people review only the exceptions.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Audit:</strong> every confirmation traceable from source to SAP.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section bg-navy" id="vdh-how-section" aria-labelledby="vdh-how-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">How It Works</span>
+          <h2 class="accent-title" id="vdh-how-title">Context first. Then the decision.</h2>
+          <p>From the supplier&#8217;s answer to a verified confirmation in SAP — with people involved only where their judgment is needed.</p>
+        </div>
+        <div class="methodology-flow vdh-steps-flow">
+          <div class="methodology-step reveal" id="vdh-step-read">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Read POs from SAP</h3>
+            <p>Open purchase orders — header, items and schedule lines — are the baseline for every response.</p>
+            <p class="vdh-tags">SAP as the starting point</p>
+          </div>
+          <div class="methodology-step reveal" id="vdh-step-understand">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Understand any response</h3>
+            <p>VDH identifies the supplier, rebuilds the context and turns the response into structured facts.</p>
+            <p class="vdh-tags">Portal · email · PDF · Excel · any language</p>
+          </div>
+          <div class="methodology-step reveal" id="vdh-step-validate">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Match &amp; validate</h3>
+            <p>Each line is resolved and checked deterministically against SAP, business rules and tolerances.</p>
+            <p class="vdh-tags">Accept · modify · split · partial reply</p>
+          </div>
+          <div class="methodology-step reveal" id="vdh-step-review">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Human review, only for exceptions</h3>
+            <p>What matches is confirmed automatically. Buyers approve, correct or reject only what needs them.</p>
+            <p class="vdh-tags">Approve · correct · reject · clarify</p>
+          </div>
+          <div class="methodology-step reveal" id="vdh-step-write">
+            <span class="step-num" aria-hidden="true">05</span>
+            <h3>Controlled write to SAP</h3>
+            <p>VDH writes the confirmation, reads it back to verify, and reconciles any divergence.</p>
+            <p class="vdh-tags">Read-back · reconciliation · full history</p>
+          </div>
+        </div>
+        <div class="vdh-principle reveal">
+          <div>
+            <span class="vdh-principle-label">Complete traceability</span>
+            <p>Source · evidence · PO version · applied rule · decision · resulting action</p>
+          </div>
+        </div>
+        <p class="vdh-motto reveal">AI interprets. VDH validates deterministically. <span>SAP governs the transaction.</span></p>
+      </div>
+    </section>
+
+    <!-- Channels & Control Tower -->
+    <section class="section bg-darker" id="vdh-modules-section" aria-labelledby="vdh-modules-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Two Channels. One Confirmation State.</span>
+          <h2 class="accent-title" id="vdh-modules-title">Supplier Portal, Intelligent Email and Buyer Control Tower</h2>
+          <p>Suppliers answer the way that suits them. Both channels feed the same confirmation state — versioned, traceable and written to SAP under control.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal" id="vdh-module-portal">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Supplier Portal</h3>
+              <p>The structured channel. Suppliers confirm dates and quantities per PO line — accept, modify or split a delivery — directly, with no interpretation needed.</p>
+              <p class="vdh-tags">Supplier → Supplier Portal → VDH</p>
+            </div>
+          </article>
+          <article class="service-card reveal" id="vdh-module-email">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <h3>Intelligent Email</h3>
+              <p>The unstructured channel. Emails and PDFs in free text and any language are routed to VDH: a first AI agent extracts the content, a second puts it in context, and VDH applies deterministic validation and decision rules.</p>
+              <p class="vdh-tags">Email &amp; PDF → Integration Suite → VDH → AI agents</p>
+            </div>
+          </article>
+          <article class="service-card reveal" id="vdh-module-tower">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3>Buyer Control Tower</h3>
+              <p>The buyer&#8217;s workspace for what needs attention: exceptions, approvals, KPIs, alerts, history and reconciliation — plus the rules and tolerances that drive automation.</p>
+              <p class="vdh-tags">Exceptions · KPIs · approvals · rules &amp; tolerances</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="section bg-navy" id="vdh-architecture-section" aria-labelledby="vdh-architecture-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Architecture</span>
+          <h2 class="accent-title" id="vdh-architecture-title">Built on SAP BTP. Alongside S/4HANA, without modifying the core.</h2>
+          <p>VDH complements SAP and Ariba — no forced replacement, no mandatory new workspace.</p>
+        </div>
+        <div class="services-grid vdh-arch-grid">
+          <article class="service-card reveal" id="vdh-arch-ui">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Interfaces</h3>
+              <p>SAPUI5 Supplier Portal for external users and SAPUI5 Buyer Control Tower for internal teams.</p>
+              <p class="vdh-tags">SAPUI5</p>
+            </div>
+          </article>
+          <article class="service-card reveal" id="vdh-arch-core">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <h3>VDH core on SAP BTP</h3>
+              <p>CAP services on Cloud Foundry for PO reading, confirmations, validation and rules, controlled SAP writes, reconciliation, audit and history.</p>
+              <p class="vdh-tags">CAP · Cloud Foundry · SAP HANA Cloud · AI services</p>
+            </div>
+          </article>
+          <article class="service-card reveal" id="vdh-arch-integration">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+              <h3>Integration with SAP</h3>
+              <p>OData and SOAP to read and write S/4HANA through Destination and Cloud Connector, with event-driven synchronization where Business Events are available.</p>
+              <p class="vdh-tags">Integration Suite · OData · SOAP · Cloud Connector</p>
+            </div>
+          </article>
+          <article class="service-card reveal" id="vdh-arch-governance">
+            <div>
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3>Security &amp; governance</h3>
+              <p>Identity and roles, HTTPS/TLS, audit trails, monitoring with alerting and controlled retries, and GDPR-aligned retention policies.</p>
+              <p class="vdh-tags">IAS · XSUAA · BTP logging · Alert Notification</p>
+            </div>
+          </article>
+        </div>
+        <p class="vdh-motto reveal">No VDH channel, AI or user writes directly to SAP. <span>Every change is governed by the VDH core.</span></p>
+      </div>
+    </section>
+
+    <!-- Demo videos -->
+    <section class="section bg-darker" id="vdh-demo-section" aria-labelledby="vdh-demo-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">See It in Action</span>
+          <h2 class="accent-title" id="vdh-demo-title">Demo: from supplier email to SAP</h2>
+          <p>Two real cases, start to finish: one confirmation that matches exactly and syncs to SAP with zero clicks, and one split delivery outside tolerance that the buyer approves with a single click.</p>
+        </div>
+        <div class="vdh-video-tabs reveal" role="tablist" aria-label="Demo language">
+          <button class="filter-btn active" role="tab" aria-selected="true" aria-controls="vdh-video-en" id="vdh-tab-en">English</button>
+          <button class="filter-btn" role="tab" aria-selected="false" aria-controls="vdh-video-es" id="vdh-tab-es">Español</button>
+        </div>
+        <div class="vdh-video-frame reveal">
+          <video id="vdh-video-en" role="tabpanel" aria-labelledby="vdh-tab-en" controls preload="metadata" playsinline poster="assets/video/vdh-demo-en-poster.jpg">
+            <source src="assets/video/vdh-demo-en.mp4" type="video/mp4">
+          </video>
+          <video id="vdh-video-es" role="tabpanel" aria-labelledby="vdh-tab-es" controls preload="none" playsinline poster="assets/video/vdh-demo-es-poster.jpg" hidden>
+            <source src="assets/video/vdh-demo-es.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-navy" id="vdh-cta-section" aria-labelledby="vdh-cta-title">
+      <div class="container">
+        <div class="section-header reveal" style="text-align: center; margin: 0 auto;">
+          <span class="section-label">Next Step</span>
+          <h2 class="accent-title" id="vdh-cta-title">See VDH with your own suppliers.</h2>
+          <p>We start with a functional validation session on real supplier scenarios, then a controlled pilot. Start small, prove value, scale with confidence.</p>
+          <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
+            <a href="contact.html" class="btn btn-primary" id="vdh-cta-contact">Talk to us</a>
+            <a href="solutions.html" class="btn btn-secondary" id="vdh-cta-solutions">Back to Solutions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Demo language tabs
+    document.querySelectorAll('.vdh-video-tabs [role="tab"]').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.vdh-video-tabs [role="tab"]').forEach(t => {
+          const selected = t === tab;
+          t.classList.toggle('active', selected);
+          t.setAttribute('aria-selected', selected);
+          const video = document.getElementById(t.getAttribute('aria-controls'));
+          video.hidden = !selected;
+          if (!selected) video.pause();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

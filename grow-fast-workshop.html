@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GROW Fast Discovery Workshop for S/4HANA Cloud | Frontino IT</title>
+  <meta name="description" content="Validate your SAP S/4HANA Cloud Public Edition fit in 3 days: process mapping, fit analysis and an implementation roadmap.">
+  <link rel="canonical" href="https://frontinoit.com/grow-fast-workshop.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/grow-fast-workshop.html">
+  <meta property="og:title" content="GROW Fast Discovery Workshop for S/4HANA Cloud | Frontino IT">
+  <meta property="og:description" content="Validate your SAP S/4HANA Cloud Public Edition fit in 3 days: process mapping, fit analysis and an implementation roadmap.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GROW Fast Discovery Workshop for S/4HANA Cloud | Frontino IT">
+  <meta name="twitter:description" content="Validate your SAP S/4HANA Cloud Public Edition fit in 3 days: process mapping, fit analysis and an implementation roadmap.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+        "sameAs": [
+          "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+        ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://frontinoit.com/grow-fast-workshop.html#webpage",
+      "url": "https://frontinoit.com/grow-fast-workshop.html",
+      "name": "GROW Fast Discovery Workshop for S/4HANA Cloud | Frontino IT",
+      "description": "Validate your SAP S/4HANA Cloud Public Edition fit in 3 days: process mapping, fit analysis and an implementation roadmap.",
+      "isPartOf": {
+        "@id": "https://frontinoit.com/#website"
+      },
+      "about": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-01",
+      "breadcrumb": {
+        "@id": "https://frontinoit.com/grow-fast-workshop.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://frontinoit.com/grow-fast-workshop.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "GROW Fast Discovery Workshop",
+          "item": "https://frontinoit.com/grow-fast-workshop.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://frontinoit.com/grow-fast-workshop.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this workshop only for companies new to SAP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The workshop is equally valuable for organizations migrating from SAP ECC to S/4HANA Cloud Public Edition. In those cases, we also review existing customizations and integrations to determine what transfers, what retires, and what needs to be redesigned for the cloud model."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the workshop be done fully remote?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We run the workshop on-site, fully remote, or hybrid. Remote sessions use structured facilitation tools and shared documentation workspaces. Most clients find that remote delivery works well for Day 2 (analysis) and Day 3 (roadmap), while Day 1 benefits from in-person process walkthroughs when feasible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from a free vendor scoping call?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A free scoping call is a sales conversation. The GROW Fast Discovery Workshop is a structured 3-day engagement with defined methodology, documented outputs, and independent analysis. The deliverables are yours regardless of who implements. It is designed to give you the information you need to evaluate any proposal — including ours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should attend from our side?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend including: the project sponsor or CIO/CFO (for Day 3), process owners from Finance, Procurement, and Operations (for Days 1–2), and the IT lead responsible for systems integration. The more decision authority is in the room, the more actionable the output will be."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after the workshop? Are we committed to Frontino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The workshop is a standalone engagement. You receive the full documentation and can choose to proceed with Frontino, another implementation partner, or internally — using your own deliverables. Many clients use the workshop output to run a better-informed RFP process with multiple vendors."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .landing-hero { padding: 10rem 0 6rem; background: radial-gradient(ellipse at 60% 0%, rgba(20, 33, 61, 0.6) 0%, transparent 70%), var(--color-black); }
+    .landing-hero .container { display: grid; grid-template-columns: 1fr; gap: 0; align-items: center; max-width: 800px; }
+    @media (max-width: 1024px) { .landing-hero .container { grid-template-columns: 1fr; gap: 3rem; } }
+    .offer-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(252, 163, 17, 0.12); border: 1px solid rgba(252, 163, 17, 0.3); color: var(--color-orange); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 0.4rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; }
+    .deliverables-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
+    .deliverables-list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.95rem; color: var(--color-gray); }
+    .deliverables-list li svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.15rem; }
+    .deliverables-list li strong { color: var(--color-white); }
+    .phases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .phase-card { background: var(--color-card-bg); border: 1px solid var(--color-card-border); border-radius: 8px; padding: 2rem 1.5rem; }
+    .phase-number { font-size: 2rem; font-weight: 700; color: var(--color-orange); opacity: 0.4; line-height: 1; margin-bottom: 0.75rem; }
+    .phase-card h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); margin-bottom: 0.5rem; }
+    .phase-card p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+    .phase-duration { font-size: 0.75rem; font-weight: 700; color: var(--color-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1rem; }
+    .ideal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+    .ideal-item { display: flex; align-items: flex-start; gap: 1rem; background: var(--color-card-bg); border: 1px solid var(--color-card-border); border-radius: 8px; padding: 1.25rem 1.5rem; }
+    .ideal-item svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.1rem; }
+    .ideal-item p { font-size: 0.9rem; color: var(--color-gray); margin: 0; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 2.5rem; border: 1px solid var(--color-card-border); border-radius: 8px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--color-card-border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; text-align: left; color: var(--color-white); font-size: 0.95rem; font-weight: 600; font-family: inherit; transition: background 0.2s; }
+    .faq-question:hover { background: rgba(255,255,255,0.03); }
+    .faq-question svg { flex-shrink: 0; color: var(--color-orange); transition: transform 0.25s ease; }
+    .faq-question[aria-expanded="true"] svg { transform: rotate(45deg); }
+    .faq-answer { display: none; padding: 0 2rem 1.5rem; font-size: 0.9rem; color: var(--color-gray); line-height: 1.7; }
+    .faq-answer.open { display: block; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .why-item { display: flex; flex-direction: column; gap: 0.75rem; }
+    .why-item h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); }
+    .why-item p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+
+    /* Process coverage map */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .coverage-item {
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-card-border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .coverage-item-name { font-size: 0.9rem; font-weight: 600; color: var(--color-white); }
+    .fit-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+    .fit-high { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.25); }
+    .fit-medium { background: rgba(252,163,17,0.15); color: var(--color-orange); border: 1px solid rgba(252,163,17,0.25); }
+    .fit-review { background: rgba(148,163,184,0.12); color: #94a3b8; border: 1px solid rgba(148,163,184,0.2); }
+
+    /* Day cards — distinctive workshop look */
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 3rem;
+      border: 1px solid var(--color-card-border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    @media (max-width: 768px) { .days-grid { grid-template-columns: 1fr; } }
+    .day-card {
+      padding: 2rem 1.75rem;
+      border-right: 1px solid var(--color-card-border);
+      background: var(--color-card-bg);
+      position: relative;
+    }
+    .day-card:last-child { border-right: none; }
+    @media (max-width: 768px) { .day-card { border-right: none; border-bottom: 1px solid var(--color-card-border); } .day-card:last-child { border-bottom: none; } }
+    .day-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-orange);
+      margin-bottom: 0.75rem;
+    }
+    .day-card h4 { font-size: 1.05rem; font-weight: 700; color: var(--color-white); margin-bottom: 1rem; }
+    .day-tasks { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .day-tasks li { font-size: 0.85rem; color: var(--color-gray); display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.5; }
+    .day-tasks li::before { content: '—'; color: var(--color-orange); flex-shrink: 0; }
+    .day-output {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--color-card-border);
+      font-size: 0.8rem;
+      color: var(--color-gray);
+    }
+    .day-output strong { color: var(--color-white); }
+  
+    /* Responsive fixes */
+    @media (max-width: 768px) {
+      .landing-hero .container { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      .deliverables-section-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .stats-hero-grid { grid-template-columns: 1fr 1fr !important; }
+      .timeline-strip { flex-direction: column; }
+      .days-grid { grid-template-columns: 1fr !important; }
+      .tiers-grid { grid-template-columns: 1fr !important; }
+      .coverage-grid { grid-template-columns: 1fr !important; }
+      .war-room-grid { grid-template-columns: 1fr !important; }
+      .coverage-area-grid { grid-template-columns: 1fr !important; }
+      .why-grid { grid-template-columns: 1fr !important; }
+      .phases-grid { grid-template-columns: 1fr !important; }
+      .ideal-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 480px) {
+      .stats-hero-grid { grid-template-columns: 1fr !important; }
+      .offer-tag { font-size: 0.65rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero -->
+    <section class="landing-hero has-hero-video" id="hero-section" aria-label="GROW Fast Discovery Workshop">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="reveal">
+          <div class="offer-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            GROW with SAP Workshop
+          </div>
+          <h1>Validate your SAP S/4HANA Cloud fit before you commit.</h1>
+          <p class="lead" style="margin-top: 1.5rem;">A 3-day structured discovery engagement that maps your core processes to SAP S/4HANA Cloud Public Edition best practices, identifies real gaps, and produces a scope-ready implementation roadmap — before you mobilize a team or sign a contract.</p>
+          <div class="hero-actions" style="margin-top: 2.5rem;">
+            <a href="#workshop-form" class="btn btn-primary">Book a Workshop</a>
+            <a href="grow-fast.html" class="btn btn-outline" style="margin-left: 1rem;">See GROW Fast Overview</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Pain -->
+    <section class="section" id="pain-section" aria-label="Common challenges before GROW with SAP">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">The Problem</p>
+          <h2>Most GROW with SAP projects start with the wrong assumptions.</h2>
+          <p class="section-sub">When discovery is skipped or rushed, scope creep, rework, and missed go-live dates follow. These are the signals that a structured workshop should come first.</p>
+        </div>
+        <div class="cards-grid" style="margin-top: 3rem;">
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            </div>
+            <h3>Unknown process fit</h3>
+            <p>You don't know which of your current processes SAP standard covers and which require a workaround, extension, or scope exclusion — so estimates are guesses.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Inflated or vague vendor proposals</h3>
+            <p>Implementation proposals that differ by 3× in cost and timeline signal that no one has actually validated the scope — they are selling a project, not a fit.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Business and IT not aligned</h3>
+            <p>Finance, operations, and IT each have a different picture of what the project should deliver. Without a shared baseline, decisions stall and requirements drift.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            </div>
+            <h3>No clean-core baseline</h3>
+            <p>Extension risk is not assessed before the project starts. Custom objects are carried into the new system by default, increasing costs and blocking future upgrades.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <h3>Unrealistic timeline expectations</h3>
+            <p>Stakeholders commit to a go-live date before scope is defined. When reality hits during the project, delays and budget overruns follow — and the team takes the blame.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcome -->
+    <section class="section section-alt" id="outcome-section" aria-label="What you get from the workshop">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">What Changes</p>
+          <h2>Three days of structured work. A clear path forward.</h2>
+          <p class="section-sub">By the end of the workshop, your team has the evidence, alignment, and documentation to make a confident decision — and start a well-scoped implementation.</p>
+        </div>
+        <div class="cards-grid" style="margin-top: 3rem;">
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+            </div>
+            <h3>Process fit, validated</h3>
+            <p>A process-by-process fit matrix that shows exactly where SAP standard covers your operations and where it does not — no more speculation.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <h3>Honest scope boundary</h3>
+            <p>A clear document defining what is in scope, what is deferred, and what is excluded — with rationale your business stakeholders can understand.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"></path><path d="M3 9h18M9 21V9"></path></svg>
+            </div>
+            <h3>Realistic implementation roadmap</h3>
+            <p>A phased milestone plan with indicative budget ranges built on actual process data — not vendor assumptions or reference project templates.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Full stakeholder alignment</h3>
+            <p>IT, finance, and operations leave the workshop with a shared baseline. Decision authority is established. Conflicting assumptions are resolved before they become project risks.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>Clean-core risk score</h3>
+            <p>An extension risk assessment that tells you upfront how many custom objects need to be evaluated and what the recommended clean-core approach is for your implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Coverage Map -->
+    <section class="section" id="coverage-section" aria-label="Process coverage areas">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Coverage Scope</p>
+          <h2>We map the process areas that matter most to your business.</h2>
+          <p class="section-sub">The workshop covers the core SAP S/4HANA Cloud process domains. Prior to Day 1 we align on which areas to prioritize based on your industry, org structure, and strategic goals.</p>
+        </div>
+        <div class="coverage-grid reveal">
+          <div class="coverage-item">
+            <span class="coverage-item-name">Financial Accounting</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Management Accounting</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Procurement</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Order-to-Cash</span>
+            <span class="fit-badge fit-medium">Varies</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Inventory Management</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Manufacturing</span>
+            <span class="fit-badge fit-medium">Varies</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Project Systems</span>
+            <span class="fit-badge fit-review">Assess</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Asset Management</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">HR / Payroll</span>
+            <span class="fit-badge fit-review">Assess</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Analytics & Reporting</span>
+            <span class="fit-badge fit-high">High Fit</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">Integrations</span>
+            <span class="fit-badge fit-review">Assess</span>
+          </div>
+          <div class="coverage-item">
+            <span class="coverage-item-name">BTP Extensions</span>
+            <span class="fit-badge fit-medium">Varies</span>
+          </div>
+        </div>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--color-gray);">
+          <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #34d399; margin-right: 0.4rem;"></span>High Fit — SAP standard covers most scenarios with minimal configuration.&nbsp;&nbsp;
+          <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--color-orange); margin-right: 0.4rem;"></span>Varies — Fit depends on your specific process design.&nbsp;&nbsp;
+          <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; margin-right: 0.4rem;"></span>Assess — Requires detailed review before scoping.
+        </p>
+      </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="section section-alt" id="how-it-works-section" aria-label="Workshop structure">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">How It Works</p>
+          <h2>Three focused days. Three structured outputs.</h2>
+          <p class="section-sub">Each day has a defined agenda, participant list, and documented output. We run the workshop on-site, remote, or hybrid — adapted to your team's setup.</p>
+        </div>
+        <div class="days-grid reveal">
+          <div class="day-card">
+            <div class="day-label">Day 1</div>
+            <h4>Business Process Discovery</h4>
+            <ul class="day-tasks">
+              <li>Current-state walkthrough of Finance, Procurement, Sales, and Operations</li>
+              <li>Key pain points, manual workarounds, and process exceptions documented</li>
+              <li>Decision authority mapping — who owns which process</li>
+              <li>Existing customizations and integrations catalogued</li>
+            </ul>
+            <div class="day-output"><strong>Output:</strong> Current-state process map and pain point register</div>
+          </div>
+          <div class="day-card">
+            <div class="day-label">Day 2</div>
+            <h4>Fit-to-Standard Analysis</h4>
+            <ul class="day-tasks">
+              <li>Process-by-process comparison against SAP S/4HANA Cloud Public Edition standard</li>
+              <li>Gap identification: configuration options vs. BTP extensions vs. exclusions</li>
+              <li>Clean-core posture assessment per process area</li>
+              <li>Integration points and third-party dependencies reviewed</li>
+            </ul>
+            <div class="day-output"><strong>Output:</strong> Fit matrix draft and gap resolution options log</div>
+          </div>
+          <div class="day-card">
+            <div class="day-label">Day 3</div>
+            <h4>Roadmap &amp; Decision Session</h4>
+            <ul class="day-tasks">
+              <li>Scope boundary definition: in, deferred, excluded</li>
+              <li>Phased milestone plan with indicative budget ranges</li>
+              <li>Resource model and internal readiness review</li>
+              <li>Executive readout: go / no-go recommendation with evidence</li>
+            </ul>
+            <div class="day-output"><strong>Output:</strong> Implementation roadmap and final workshop report</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables -->
+    <section class="section" id="deliverables-section" aria-label="Workshop deliverables">
+      <div class="container two-col-stack" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start;">
+        <div class="reveal">
+          <p class="section-label">Deliverables</p>
+          <h2>Everything you need to make a confident decision.</h2>
+          <p style="color: var(--color-gray); margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">You leave the workshop with a complete, documented set of outputs. All deliverables are yours — regardless of whether you proceed with Frontino or another partner.</p>
+          <a href="#workshop-form" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">Start Your Workshop</a>
+        </div>
+        <div class="reveal">
+          <ul class="deliverables-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Process Fit Matrix</strong> — coverage rating for each mapped process area across all in-scope modules</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Gap Resolution Log</strong> — ranked list of gaps with standard-first resolution options, extension candidates, and exclusion recommendations</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Scope Boundary Document</strong> — what goes into Phase 1, what is deferred, and what is excluded, with rationale</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Clean-Core Posture Report</strong> — extension risk score per process area and recommended approach for the implementation</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Implementation Roadmap</strong> — phased milestone plan with indicative budget ranges and internal readiness assessment</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Go/No-Go Recommendation</strong> — executive-ready 2-page summary with evidence-backed decision guidance</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ideal For -->
+    <section class="section section-alt" id="ideal-for-section" aria-label="Who this workshop is for">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Ideal For</p>
+          <h2>Built for organizations at the decision point.</h2>
+        </div>
+        <div class="ideal-grid">
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>Companies evaluating SAP S/4HANA Cloud Public Edition for the first time and unsure whether it covers their processes</p>
+          </div>
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>Mid-market businesses migrating from SAP ECC or a non-SAP system who need a fit analysis before committing to an implementation partner</p>
+          </div>
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>Organizations that received multiple implementation proposals with widely different scope and cost — and need an independent baseline</p>
+          </div>
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>IT leaders or CFOs who need to build an internal business case for a GROW with SAP project with board-ready evidence</p>
+          </div>
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>Finance and operations teams who want to understand how their specific workflows map to SAP standard before any vendor conversation</p>
+          </div>
+          <div class="ideal-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>SAP partners who want a structured, documented scoping phase with a client before mobilizing a full implementation team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Frontino -->
+    <section class="section" id="why-frontino-section" aria-label="Why choose Frontino IT">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-label">Why Frontino IT</p>
+          <h2>Independent analysis. No implementation agenda.</h2>
+          <p class="section-sub">Our incentive is a well-scoped, clean-core project — not a large implementation contract. That is what keeps the workshop output honest.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-orange);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <h4>GROW with SAP Methodology</h4>
+            <p>Our workshop is built on SAP's Activate methodology and GROW with SAP fit-to-standard principles — not a generic discovery template.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-orange);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <h4>Clean-Core From Day One</h4>
+            <p>Extension risk is assessed during scoping, not discovered after a project starts. Every gap is resolved with a standard-first recommendation before any build decision is made.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-orange);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            <h4>Business-First Analysis</h4>
+            <p>We speak the language of finance, operations, and procurement. Business process owners lead the conversation — not just IT. The output reflects business reality, not system capabilities in isolation.</p>
+          </div>
+          <div class="why-item reveal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-orange);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <h4>No Vendor Bias</h4>
+            <p>Our recommendation reflects your actual fit and readiness — not a pre-sold implementation scope. A go/no-go recommendation that says "not yet" is as valuable as one that says "proceed."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq-section" aria-label="Frequently asked questions">
+      <div class="container" style="max-width: 760px;">
+        <div class="reveal">
+          <p class="section-label">FAQ</p>
+          <h2>Common questions about the workshop.</h2>
+        </div>
+        <div class="faq-list reveal" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1">
+              Is this workshop only for companies new to SAP?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1">
+              No. The workshop is equally valuable for organizations migrating from SAP ECC to S/4HANA Cloud Public Edition. In those cases, we also review existing customizations and integrations to determine what transfers, what retires, and what needs to be redesigned for the cloud model.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2">
+              Can the workshop be done fully remote?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2">
+              Yes. We run the workshop on-site, fully remote, or hybrid. Remote sessions use structured facilitation tools and shared documentation workspaces. Most clients find that remote delivery works well for Day 2 (analysis) and Day 3 (roadmap), while Day 1 benefits from in-person process walkthroughs when feasible.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3">
+              How is this different from a free vendor scoping call?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3">
+              A free scoping call is a sales conversation. The GROW Fast Discovery Workshop is a structured 3-day engagement with defined methodology, documented outputs, and independent analysis. The deliverables are yours regardless of who implements. It is designed to give you the information you need to evaluate any proposal — including ours.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4">
+              Who should attend from our side?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4">
+              We recommend including: the project sponsor or CIO/CFO (for Day 3), process owners from Finance, Procurement, and Operations (for Days 1–2), and the IT lead responsible for systems integration. The more decision authority is in the room, the more actionable the output will be.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-btn-5">
+              What happens after the workshop? Are we committed to Frontino?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5">
+              No. The workshop is a standalone engagement. You receive the full documentation and can choose to proceed with Frontino, another implementation partner, or internally — using your own deliverables. Many clients use the workshop output to run a better-informed RFP process with multiple vendors.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="section contact-section" id="workshop-form" aria-label="Book the GROW Fast Discovery Workshop">
+      <div class="container" style="max-width: 720px;">
+        <div class="reveal">
+          <p class="section-label">Book the Workshop</p>
+          <h2>Ready to validate your GROW with SAP fit?</h2>
+          <p style="color: var(--color-gray); margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">Tell us about your current system and goals. A senior architect will review your situation and reach out within one business day to discuss the workshop scope and logistics.</p>
+        </div>
+        <form id="workshop-form-submit" class="contact-form reveal" novalidate style="margin-top: 2.5rem;" aria-label="GROW Fast Discovery Workshop request form">
+          <div id="form-feedback" role="alert" aria-live="polite"></div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="form-name" name="name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="form-email">Work Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="form-email" name="email" placeholder="you@company.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-company">Company <span aria-hidden="true">*</span></label>
+              <input type="text" id="form-company" name="company" placeholder="Your company name" required autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label for="form-role">Your Role</label>
+              <input type="text" id="form-role" name="role" placeholder="e.g. CIO, CFO, Project Lead" autocomplete="organization-title">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-current-system">Current System <span aria-hidden="true">*</span></label>
+              <select id="form-current-system" name="current_system" required>
+                <option value="" disabled selected>Select your current ERP</option>
+                <option value="sap-ecc">SAP ECC / ERP</option>
+                <option value="sap-business-one">SAP Business One</option>
+                <option value="oracle">Oracle ERP</option>
+                <option value="microsoft">Microsoft Dynamics</option>
+                <option value="non-sap-other">Other non-SAP ERP</option>
+                <option value="greenfield">No ERP — Greenfield</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-target-golive">Target Go-Live Window <span aria-hidden="true">*</span></label>
+              <select id="form-target-golive" name="target_golive" required>
+                <option value="" disabled selected>Select a timeframe</option>
+                <option value="under-6m">Under 6 months</option>
+                <option value="6-12m">6–12 months</option>
+                <option value="12-18m">12–18 months</option>
+                <option value="18m-plus">18+ months / Exploring options</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-processes">Primary Process Areas of Concern</label>
+            <input type="text" id="form-processes" name="processes" placeholder="e.g. Finance &amp; Controlling, Procurement, Sales Order Management">
+          </div>
+
+          <div class="form-group">
+            <label for="form-situation">Describe your situation <span aria-hidden="true">*</span></label>
+            <textarea id="form-situation" name="situation" rows="4" placeholder="What is driving the SAP evaluation? What is the biggest unknown you need the workshop to answer?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Request Workshop — No Commitment Required</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Frontino IT Homepage">
+            <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT" class="footer-logo" width="186" height="52">
+          </a>
+          <p>Senior SAP consulting and product engineering. Clean-core architecture, SAP implementations, BTP, integration and automation — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <div class="footer-nav-col">
+            <span class="footer-nav-title">Services</span>
+            <ul>
+              <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+              <li><a href="grow-fast.html">GROW Fast</a></li>
+              <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+              <li><a href="solutions.html">Use Cases</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <span class="footer-nav-title">Engagements</span>
+            <ul>
+              <li><a href="assessment.html">Readiness Assessment</a></li>
+              <li><a href="grow-fast-workshop.html">GROW Fast Workshop</a></li>
+              <li><a href="btp-integration-sprint.html">BTP Integration Sprint</a></li>
+              <li><a href="clean-core-assessment.html">Clean Core Assessment</a></li>
+              <li><a href="hypercare-360.html">Hypercare 360</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <span class="footer-nav-title">Company</span>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="partner.html">Partners</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Talk to us</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col footer-touch-col">
+            <span class="footer-nav-title">Get in Touch</span>
+            <ul>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="legal.html">Legal Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          const ans = document.getElementById(b.getAttribute('aria-controls'));
+          if (ans) ans.classList.remove('open');
+        });
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          const answer = document.getElementById(btn.getAttribute('aria-controls'));
+          if (answer) answer.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

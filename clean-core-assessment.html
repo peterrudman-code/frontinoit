@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP Clean Core Extension Assessment | Frontino IT</title>
+  <meta name="description" content="Identify which SAP custom code should stay in the core, move side-by-side to SAP BTP, or be retired, with a clear clean-core roadmap.">
+  <link rel="canonical" href="https://frontinoit.com/clean-core-assessment.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/clean-core-assessment.html">
+  <meta property="og:title" content="SAP Clean Core Extension Assessment | Frontino IT">
+  <meta property="og:description" content="Identify which SAP custom code should stay in the core, move side-by-side to SAP BTP, or be retired, with a clear clean-core roadmap.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP Clean Core Extension Assessment | Frontino IT">
+  <meta name="twitter:description" content="Identify which SAP custom code should stay in the core, move side-by-side to SAP BTP, or be retired, with a clear clean-core roadmap.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+        "sameAs": [
+          "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+        ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://frontinoit.com/clean-core-assessment.html#webpage",
+      "url": "https://frontinoit.com/clean-core-assessment.html",
+      "name": "SAP Clean Core Extension Assessment | Frontino IT",
+      "description": "Identify which SAP custom code should stay in the core, move side-by-side to SAP BTP, or be retired, with a clear clean-core roadmap.",
+      "isPartOf": {
+        "@id": "https://frontinoit.com/#website"
+      },
+      "about": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-01",
+      "breadcrumb": {
+        "@id": "https://frontinoit.com/clean-core-assessment.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://frontinoit.com/clean-core-assessment.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Clean Core Assessment",
+          "item": "https://frontinoit.com/clean-core-assessment.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://frontinoit.com/clean-core-assessment.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you need access to our SAP system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a full assessment we use standard SAP transactions to extract the object inventory and usage statistics. This requires read-only access or a data export from your BASIS team. We provide a precise extraction guide so your team can prepare the files without giving us direct system access if that is preferred."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many custom objects can you handle?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standard assessment covers up to 2,000 active custom objects within the 5–10 business day timeline. For larger inventories (enterprise SAP landscapes with 5,000+ objects), we scope the assessment in phases — starting with the highest-impact process areas. We will advise on the right approach after reviewing your initial inventory."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if we want help executing the migration roadmap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many clients use the assessment as the starting point for a BTP Integration Sprint or a broader clean-core migration engagement with Frontino IT. If you want to move directly from assessment to execution, we can design the follow-on scope based on the roadmap findings — no need to restart from scratch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this relevant for SAP ECC or only for SAP Cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The assessment is designed for SAP ECC and S/4HANA on-premise environments — where custom code accumulates over years. It is most valuable as a preparation step for a move to SAP Cloud, but it also delivers immediate value for ECC environments where upgrade cycles are slowed by custom code regression testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the data security look like?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We sign an NDA before receiving any data. The object inventory and system information are used solely for classification purposes and are not shared with any third parties. All deliverables are returned to you — we do not retain client system data after the engagement closes."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .landing-hero { padding: 10rem 0 6rem; background: radial-gradient(ellipse at 60% 0%, rgba(20, 33, 61, 0.6) 0%, transparent 70%), var(--color-black); }
+    .landing-hero .container { display: grid; grid-template-columns: 1fr; gap: 0; align-items: center; max-width: 800px; }
+    @media (max-width: 1024px) { .landing-hero .container { grid-template-columns: 1fr; gap: 3rem; } }
+    .offer-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(252, 163, 17, 0.12); border: 1px solid rgba(252, 163, 17, 0.3); color: var(--color-orange); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 0.4rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; }
+    .deliverables-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
+    .deliverables-list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.95rem; color: var(--color-gray); }
+    .deliverables-list li svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.15rem; }
+    .deliverables-list li strong { color: var(--color-white); }
+    .phases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .phase-card { background: var(--color-card-bg); border: 1px solid var(--color-card-border); border-radius: 8px; padding: 2rem 1.5rem; }
+    .phase-number { font-size: 2rem; font-weight: 700; color: var(--color-orange); opacity: 0.4; line-height: 1; margin-bottom: 0.75rem; }
+    .phase-card h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); margin-bottom: 0.5rem; }
+    .phase-card p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+    .phase-duration { font-size: 0.75rem; font-weight: 700; color: var(--color-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1rem; }
+    .ideal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+    .ideal-item { display: flex; align-items: flex-start; gap: 1rem; background: var(--color-card-bg); border: 1px solid var(--color-card-border); border-radius: 8px; padding: 1.25rem 1.5rem; }
+    .ideal-item svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.1rem; }
+    .ideal-item p { font-size: 0.9rem; color: var(--color-gray); margin: 0; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 2.5rem; border: 1px solid var(--color-card-border); border-radius: 8px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--color-card-border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; text-align: left; color: var(--color-white); font-size: 0.95rem; font-weight: 600; font-family: inherit; transition: background 0.2s; }
+    .faq-question:hover { background: rgba(255,255,255,0.03); }
+    .faq-question svg { flex-shrink: 0; color: var(--color-orange); transition: transform 0.25s ease; }
+    .faq-question[aria-expanded="true"] svg { transform: rotate(45deg); }
+    .faq-answer { display: none; padding: 0 2rem 1.5rem; font-size: 0.9rem; color: var(--color-gray); line-height: 1.7; }
+    .faq-answer.open { display: block; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .why-item { display: flex; flex-direction: column; gap: 0.75rem; }
+    .why-item h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); }
+    .why-item p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+
+    .classification-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--color-card-border);
+    }
+    .classification-table th {
+      background: var(--color-navy);
+      color: var(--color-white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 1rem 1.5rem;
+      text-align: left;
+    }
+    .classification-table td {
+      padding: 1rem 1.5rem;
+      font-size: 0.875rem;
+      color: var(--color-gray);
+      border-top: 1px solid var(--color-card-border);
+      vertical-align: top;
+    }
+    .classification-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .class-badge {
+      display: inline-block;
+      padding: 0.2rem 0.75rem;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .class-retire { background: rgba(255, 77, 77, 0.15); color: #ff4d4d; }
+    .class-keep { background: rgba(252, 163, 17, 0.15); color: var(--color-orange); }
+    .class-migrate { background: rgba(52, 211, 153, 0.15); color: #34d399; }
+  
+    /* Responsive fixes */
+    @media (max-width: 768px) {
+      .landing-hero .container { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      .deliverables-section-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .stats-hero-grid { grid-template-columns: 1fr 1fr !important; }
+      .timeline-strip { flex-direction: column; }
+      .days-grid { grid-template-columns: 1fr !important; }
+      .tiers-grid { grid-template-columns: 1fr !important; }
+      .coverage-grid { grid-template-columns: 1fr !important; }
+      .war-room-grid { grid-template-columns: 1fr !important; }
+      .coverage-area-grid { grid-template-columns: 1fr !important; }
+      .why-grid { grid-template-columns: 1fr !important; }
+      .phases-grid { grid-template-columns: 1fr !important; }
+      .ideal-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 480px) {
+      .stats-hero-grid { grid-template-columns: 1fr !important; }
+      .offer-tag { font-size: 0.65rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link active" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero -->
+    <section class="landing-hero has-hero-video" id="hero-section" aria-label="Clean Core Extension Assessment">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="reveal">
+          <div class="offer-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Clean Core
+          </div>
+          <h1>Identify what should stay in the SAP core, what should move to BTP, and what should be retired.</h1>
+          <p class="lead" style="margin-top: 1.5rem;">The Clean Core Extension Assessment is a structured review of your custom SAP code — classifying every Z-object and modification against SAP's clean-core standard and producing a prioritized migration roadmap.</p>
+          <div class="hero-actions" style="margin-top: 2.5rem;">
+            <a href="#cleancore-form" class="btn btn-primary" id="hero-cta-primary">Assess your extensions</a>
+            <a href="#how-it-works" class="btn btn-secondary" id="hero-cta-secondary">See how it works</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Pain -->
+    <section class="section bg-darker" id="pain-section" aria-labelledby="pain-title">
+      <div class="container">
+        <div class="problem-impact-grid">
+          <div class="problem-block reveal">
+            <span class="section-label">The Problem</span>
+            <h2 id="pain-title">Custom code is the number one blocker for SAP Cloud adoption.</h2>
+            <p>Years of modifications, Z-programs, and custom enhancements accumulate silently — until the moment you try to upgrade or move to SAP Cloud, and everything stops.</p>
+            <ul class="pain-list" style="margin-top: 2rem;">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Thousands of Z-objects with no documentation and unknown business owners</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>SAP upgrades blocked or heavily tested because of core modifications</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Cloud migration scope overestimated because nobody knows what custom code is actually used</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Annual maintenance costs inflated by code that no longer serves a business purpose</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>No roadmap for how to move from where you are to a clean-core architecture</span>
+              </li>
+            </ul>
+          </div>
+          <div class="impact-block reveal" style="align-self: center;">
+            <span class="section-label">The Outcome</span>
+            <h2 class="accent-title" style="font-size: clamp(1.3rem, 2.5vw, 1.8rem);">A complete picture of your custom code — and a clear path to clean core.</h2>
+            <ul class="benefit-list" style="margin-top: 1.5rem;">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full inventory of custom objects with usage frequency and business criticality</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Classification of every object: Retire / Keep / Migrate to BTP</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>BTP extension candidates with recommended approach for each</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Realistic effort estimates and phased migration roadmap</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Reduced cloud migration scope and cost baseline for vendor negotiations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classification Model -->
+    <section class="section" id="classification-section" aria-labelledby="class-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Framework</span>
+          <h2 class="accent-title" id="class-title">Three verdicts. Every object gets one.</h2>
+          <p>We classify your custom code using SAP's clean-core extensibility model combined with real usage data from your system — not just a theoretical framework.</p>
+        </div>
+        <div class="reveal" style="overflow-x: auto;">
+          <table class="classification-table" aria-label="Custom code classification categories">
+            <thead>
+              <tr>
+                <th>Classification</th>
+                <th>What it means</th>
+                <th>Typical examples</th>
+                <th>Next action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="class-badge class-retire">Retire</span></td>
+                <td>Object has no active users, no business function, or duplicates standard SAP functionality</td>
+                <td>Unused Z-reports, deprecated workarounds, replaced form outputs</td>
+                <td>Decommission — reduce maintenance scope immediately</td>
+              </tr>
+              <tr>
+                <td><span class="class-badge class-keep">Keep</span></td>
+                <td>Object uses standard SAP extensibility (BAdI, CDS View, RAP) — already clean-core compliant</td>
+                <td>Enhancement implementations, standard BAdi exits, key-user extensibility</td>
+                <td>Document and govern — no migration needed</td>
+              </tr>
+              <tr>
+                <td><span class="class-badge class-migrate">Migrate to BTP</span></td>
+                <td>Object modifies core tables or uses non-standard ABAP techniques — must move to BTP side-by-side</td>
+                <td>Core-modifying user exits, Z-tables with business logic, custom reports on standard tables</td>
+                <td>Design BTP extension and plan phased migration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section bg-navy" id="how-it-works" aria-labelledby="hiw-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Process</span>
+          <h2 class="accent-title" id="hiw-title">How the assessment works.</h2>
+          <p>Five structured phases. Minimal disruption to your team. Maximum clarity on your custom code landscape.</p>
+        </div>
+        <div class="phases-grid reveal">
+          <div class="phase-card">
+            <div class="phase-number">01</div>
+            <h4>Object Extraction</h4>
+            <p>We extract the full inventory of custom objects from your system using standard SAP tools — Z-programs, BAdi implementations, enhancements, modifications, and Z-tables.</p>
+            <div class="phase-duration">Day 1–2</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">02</div>
+            <h4>Usage Analysis</h4>
+            <p>We analyze transaction usage logs to identify active vs. dormant objects — filtering out the code that nobody uses before spending time classifying it.</p>
+            <div class="phase-duration">Days 2–3</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">03</div>
+            <h4>Technical Classification</h4>
+            <p>Senior ABAP architects review active objects against SAP's clean-core extensibility model and assign a classification: Retire, Keep, or Migrate to BTP.</p>
+            <div class="phase-duration">Days 4–7</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">04</div>
+            <h4>Business Validation</h4>
+            <p>We run a short validation session with your key process owners to confirm business criticality and identify any objects flagged incorrectly by technical analysis alone.</p>
+            <div class="phase-duration">Days 8–9</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">05</div>
+            <h4>Roadmap & Report</h4>
+            <p>We deliver the full classification report, phased migration roadmap, BTP extension candidates list, and a 90-minute readout with your team.</p>
+            <div class="phase-duration">Day 10</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables -->
+    <section class="section bg-darker" id="deliverables-section" aria-labelledby="deliv-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What You Receive</span>
+          <h2 class="accent-title" id="deliv-title">A complete clean-core action plan.</h2>
+        </div>
+        <div class="problem-impact-grid reveal">
+          <ul class="deliverables-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Custom Code Inventory</strong> — full list of all Z-objects with usage frequency, technical type, and business process mapping</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Classification Report</strong> — every object classified as Retire / Keep / Migrate with documented rationale</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>BTP Extension Candidates</strong> — prioritized list of Migrate objects with recommended BTP pattern (side-by-side app, iFlow, SAP Build workflow)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Phased Migration Roadmap</strong> — 3-horizon plan (quick wins / mid-term / long-term) with effort estimates per object group</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Quick Win List</strong> — objects that can be retired immediately with zero risk, for fast scope reduction</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Readout Session</strong> — 90-minute walkthrough with your IT leadership and key process owners to discuss findings and priorities</span>
+            </li>
+          </ul>
+          <div style="align-self: center;">
+            <div class="hero-card-glow" style="max-width: 100%;">
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3>Use the results regardless of what comes next.</h3>
+              <p>The assessment report is yours to use — for internal planning, SAP partner negotiations, board approval, or as a baseline for your cloud migration RFP. No lock-in.</p>
+              <p style="margin-top: 0.75rem; color: var(--color-orange); font-size: 0.9rem; font-weight: 600;">Clients typically retire 40–60% of custom code immediately after receiving the quick win list.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ideal For -->
+    <section class="section" id="ideal-for-section" aria-labelledby="ideal-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Ideal For</span>
+          <h2 class="accent-title" id="ideal-title">This assessment is right for you if...</h2>
+        </div>
+        <div class="ideal-grid reveal">
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You are planning a migration to SAP S/4HANA Cloud and need to understand your custom code debt before committing to scope</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You received a migration quote that seems too large — and you want an independent view on what can actually be retired or simplified</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>Your SAP upgrade cycles take too long because of the custom code regression testing required</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You want to adopt clean-core principles gradually and need a prioritized roadmap to guide the work</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You are an SAP partner who needs a clean-core baseline for a client engagement or presales proposal</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You want to reduce your annual SAP maintenance costs by decommissioning unused custom objects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Frontino IT -->
+    <section class="section bg-navy" id="why-section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Why Frontino IT</span>
+          <h2 class="accent-title" id="why-title">Clean core is not a trend for us — it is how we build.</h2>
+          <p>Every project we deliver starts with a clean-core lens. We know which objects to keep, which to retire, and which to move to BTP.</p>
+        </div>
+        <div class="why-grid reveal">
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h4>ABAP and BTP architects</h4>
+            <p>Our senior architects understand both the legacy ABAP landscape and the BTP extensibility model — so classifications are technically accurate, not just theoretical.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>SAP-aligned classification</h4>
+            <p>We use SAP's official clean-core extensibility tiers as the classification standard — ensuring your roadmap is compatible with SAP's upgrade and cloud direction.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h4>Business context included</h4>
+            <p>Technical classification alone misses objects that are unused by the system but still required by the business. We validate with process owners before finalizing the report.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h4>Actionable, not academic</h4>
+            <p>The roadmap is built to be executed — with effort estimates, priorities, and BTP patterns you can hand to a delivery team or use to issue an RFP.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-darker" id="faq-section" aria-labelledby="faq-title">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-header reveal">
+          <span class="section-label">Common Questions</span>
+          <h2 class="accent-title" id="faq-title">Frequently asked questions.</h2>
+        </div>
+        <div class="faq-list reveal" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1-answer">
+              Do you need access to our SAP system?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-1-answer">
+              For a full assessment we use standard SAP transactions to extract the object inventory and usage statistics. This requires read-only access or a data export from your BASIS team. We provide a precise extraction guide so your team can prepare the files without giving us direct system access if that is preferred.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2-answer">
+              How many custom objects can you handle?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-2-answer">
+              The standard assessment covers up to 2,000 active custom objects within the 5–10 business day timeline. For larger inventories (enterprise SAP landscapes with 5,000+ objects), we scope the assessment in phases — starting with the highest-impact process areas. We will advise on the right approach after reviewing your initial inventory.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3-answer">
+              What if we want help executing the migration roadmap?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-3-answer">
+              Many clients use the assessment as the starting point for a BTP Integration Sprint or a broader clean-core migration engagement with Frontino IT. If you want to move directly from assessment to execution, we can design the follow-on scope based on the roadmap findings — no need to restart from scratch.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4-answer">
+              Is this relevant for SAP ECC or only for SAP Cloud?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-4-answer">
+              The assessment is designed for SAP ECC and S/4HANA on-premise environments — where custom code accumulates over years. It is most valuable as a preparation step for a move to SAP Cloud, but it also delivers immediate value for ECC environments where upgrade cycles are slowed by custom code regression testing.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5-answer">
+              What does the data security look like?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-5-answer">
+              We sign an NDA before receiving any data. The object inventory and system information are used solely for classification purposes and are not shared with any third parties. All deliverables are returned to you — we do not retain client system data after the engagement closes.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="section contact-section" id="cleancore-form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-label">Start the Assessment</span>
+            <h2 id="form-title">Tell us about your SAP landscape and we will confirm the scope.</h2>
+            <p class="lead">A short intake call is all we need to confirm your custom code volume, agree on the assessment scope, and set a start date.</p>
+            <div class="info-cards">
+              <div class="info-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div>
+                  <h4>Timeline</h4>
+                  <p>5–10 business days from intake to report delivery.</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <div>
+                  <h4>Deliverable</h4>
+                  <p>Classification report, BTP extension candidates, phased roadmap, and readout session.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal">
+            <form id="cleancore-form-submit" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="form-name">Full Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" required placeholder="Maria Hoffmann">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Work Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" required placeholder="maria@company.com">
+              </div>
+              <div class="form-group">
+                <label for="form-company">Company</label>
+                <input type="text" id="form-company" name="company" class="form-input" required placeholder="Hoffmann Industries GmbH">
+              </div>
+              <div class="form-group">
+                <label for="form-system">Current SAP System</label>
+                <select id="form-system" name="system" class="form-input" style="height: 52px;" required>
+                  <option value="" disabled selected>Select your current SAP system...</option>
+                  <option value="SAP ECC 6.0">SAP ECC 6.0</option>
+                  <option value="SAP S/4HANA On-Prem">SAP S/4HANA On-Premise</option>
+                  <option value="SAP S/4HANA Cloud Private">SAP S/4HANA Cloud Private Edition</option>
+                  <option value="Multiple systems">Multiple SAP systems</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-volume">Estimated custom object volume</label>
+                <select id="form-volume" name="volume" class="form-input" style="height: 52px;" required>
+                  <option value="" disabled selected>Rough estimate of Z-objects...</option>
+                  <option value="Under 500">Under 500 objects</option>
+                  <option value="500–2000">500 to 2,000 objects</option>
+                  <option value="2000–5000">2,000 to 5,000 objects</option>
+                  <option value="5000+">Over 5,000 objects</option>
+                  <option value="Unknown">Not sure — need to find out</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-goal">What is driving this assessment?</label>
+                <textarea id="form-goal" name="goal" class="form-textarea" required placeholder="e.g. Preparing for SAP Cloud migration, reducing upgrade effort, getting a baseline before vendor negotiation, internal clean-core initiative..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">Request the Assessment</button>
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+        });
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

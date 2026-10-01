@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Core in Practice: SAP Core vs. SAP BTP | Frontino IT</title>
+  <meta name="description" content="A practical guide to clean core: the SAP extension options, a simple decision guide for custom code, and why to start before your S/4HANA migration.">
+  <link rel="canonical" href="https://frontinoit.com/blog-clean-core-what-moves-to-btp.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/blog-clean-core-what-moves-to-btp.html">
+  <meta property="og:title" content="Clean Core in Practice: SAP Core vs. SAP BTP | Frontino IT">
+  <meta property="og:description" content="A practical guide to clean core: the SAP extension options, a simple decision guide for custom code, and why to start before your S/4HANA migration.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Clean Core in Practice: SAP Core vs. SAP BTP | Frontino IT">
+  <meta name="twitter:description" content="A practical guide to clean core: the SAP extension options, a simple decision guide for custom code, and why to start before your S/4HANA migration.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+      "sameAs": [
+        "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+      ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://frontinoit.com/blog-clean-core-what-moves-to-btp.html#article",
+      "headline": "Clean core in practice: what stays in SAP, what moves to BTP and what you retire",
+      "description": "A practical guide to clean core: the SAP extension options, a simple decision guide for custom code, and why to start before your S/4HANA migration.",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "datePublished": "2026-10-01",
+      "dateModified": "2026-10-01",
+      "author": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "mainEntityOfPage": "https://frontinoit.com/blog-clean-core-what-moves-to-btp.html",
+      "keywords": "SAP clean core, SAP BTP, side-by-side extensions, ABAP custom code, S/4HANA migration",
+      "articleSection": "Clean Core",
+      "wordCount": 598,
+      "inLanguage": "en",
+      "citation": [
+        "https://news.sap.com/2025/08/extend-sap-s4hana-cloud-right-way-clean-clear/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://frontinoit.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Clean core in practice: what stays in SAP, what moves to BTP and what you retire",
+          "item": "https://frontinoit.com/blog-clean-core-what-moves-to-btp.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Article header -->
+    <section class="hero article-hero has-hero-video" id="hero-section" aria-label="Article">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span><a href="blog.html">Blog</a><span aria-hidden="true">/</span><span>Clean Core</span>
+          </nav>
+          <span class="hero-subtitle">Clean Core</span>
+          <h1>Clean core in practice: what stays in SAP, what moves to BTP and what you retire</h1>
+          <div class="article-meta article-meta-hero">
+            <span>Frontino IT</span>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <time datetime="2026-10-01">October 2026</time>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <span>3 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article body -->
+    <section class="section article-section" aria-label="Article content">
+      <div class="container">
+        <article class="article-body">
+<p class="article-intro">"Keep the core clean" has become the standard advice for any SAP programme. But it is often misunderstood as "no customisation at all". In reality, almost every company needs some logic that standard SAP does not provide. Clean core is about where that logic lives.</p>
+
+<h2>What clean core really means</h2>
+<p>A clean core is an ERP that can be upgraded without breaking. Custom functionality is still allowed, but it is built in a way that does not depend on SAP internals: through released APIs, supported extension points and clear separation from standard code. The payoff is practical: shorter upgrade projects, less regression testing and the freedom to adopt new SAP innovations when you need them.</p>
+
+<h2>Three places an extension can live</h2>
+<ul>
+  <li><strong>In-app (key user) extensibility.</strong> Custom fields, simple logic and adapted forms, configured inside the ERP with SAP's own tools.</li>
+  <li><strong>On-stack developer extensibility.</strong> Custom code that runs inside the ERP but uses only released APIs and the restricted ABAP Cloud model, so it stays upgrade-safe.</li>
+  <li><strong>Side-by-side on SAP BTP.</strong> Applications, workflows, portals and integrations that run next to the ERP and talk to it through standard APIs and events.</li>
+</ul>
+
+<h2>SAP's four clean core levels</h2>
+<p>In August 2025 SAP replaced its earlier three-tier extensibility model with a four-level classification that gives every extension a clear grade, and maps directly to ABAP Test Cockpit (ATC) checks:</p>
+<ul>
+  <li><strong>Level A</strong>: only publicly released, stable interfaces, built with ABAP Cloud on-stack or side-by-side on SAP BTP. Fully upgrade-safe, and the target for all new development.</li>
+  <li><strong>Level B</strong>: also uses SAP's classic, documented APIs. Acceptable, but worth tracking.</li>
+  <li><strong>Level C</strong>: accesses SAP internal objects that are not released. Flexible for legacy scenarios, with real upgrade exposure.</li>
+  <li><strong>Level D</strong>: explicitly non-recommended techniques such as modifications, direct writes to SAP tables or implicit enhancements. The highest risk and technical debt.</li>
+</ul>
+<p>The practical value of the model is that it turns "is this clean?" into a measurable grade that ATC reports automatically, from no message at level A to an error at level D.</p>
+
+<h2>A simple decision guide for existing custom code</h2>
+<p>Most landscapes carry years of custom objects. Each of them falls into one of four buckets:</p>
+<ol>
+  <li><strong>Retire it</strong> if nobody uses it. Usage data usually shows a surprising amount of dead code.</li>
+  <li><strong>Replace it with standard</strong> if SAP now covers the requirement, even if the process needs a small adjustment.</li>
+  <li><strong>Keep it in the core</strong>, rebuilt on released APIs, if it is tightly coupled to transactional data and has to run inside the same logical unit of work.</li>
+  <li><strong>Move it side-by-side</strong> if it has its own users or UI, serves external parties, spans several systems or needs its own release cycle.</li>
+</ol>
+<div class="article-callout"><strong>Typical candidates for SAP BTP:</strong> approval workflows, supplier and customer portals, integrations with external systems, dashboards and AI-based assistants. They change faster than the ERP and benefit from living outside it.</div>
+
+<h2>Make it measurable</h2>
+<p>Clean core decisions should rest on facts, not opinions. Build an inventory of custom objects, combine it with real usage data, and run automated code checks to see which objects use non-released APIs. The result is a prioritised list with a recommendation for every object, and an effort estimate for the ones that need work.</p>
+
+<h2>You do not need to wait for a migration</h2>
+<p>Clean core is not only for new S/4HANA Cloud implementations. Companies on SAP ECC or S/4HANA on-premise can start today: retiring unused code, moving new requirements to SAP BTP and replacing fragile point-to-point interfaces. Every step reduces the size of the eventual migration and makes the current system easier to run.</p>
+<div class="article-sources"><h2>Sources</h2><ul><li><a href="https://news.sap.com/2025/08/extend-sap-s4hana-cloud-right-way-clean-clear/" target="_blank" rel="noopener noreferrer">SAP News: How to extend SAP S/4HANA Cloud the right way (August 2025)</a></li></ul></div>
+
+          <aside class="article-cta">
+            <p>Not sure what to keep, move or retire? Start with an assessment.</p>
+            <div class="article-cta-actions">
+              <a href="clean-core-assessment.html" class="btn btn-primary">Clean Core Assessment</a>
+              <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- More articles -->
+    <section class="section bg-navy" aria-labelledby="more-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Keep Reading</span>
+          <h2 class="accent-title" id="more-title">More from the blog</h2>
+        </div>
+        <div class="articles-grid" role="list">
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-grow">SAP Strategy</span>
+            <h3><a href="blog-choose-your-sap-path.html">ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path</a></h3>
+            <p>There is no single right answer for every company. A clear look at the S/4HANA deployment options, their trade-offs, and the questions that decide which path fits you.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-choose-your-sap-path.html" class="read-link" aria-label="Read article: ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-ai">Enterprise AI</span>
+            <h3><a href="blog-sap-autonomous-enterprise-joule-agents.html">SAP&#x27;s Autonomous Enterprise: what Joule agents mean for your SAP landscape</a></h3>
+            <p>At Sapphire 2026 SAP presented more than 50 Joule Assistants and over 200 agents. What was announced, what is already available, and what it takes to be ready.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-sap-autonomous-enterprise-joule-agents.html" class="read-link" aria-label="Read article: SAP&#x27;s Autonomous Enterprise: what Joule agents mean for your SAP landscape">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-btp">SAP Fiori &amp; UX</span>
+            <h3><a href="blog-sap-fiori-joule-work-ux.html">SAP Fiori in the age of Joule: what changes for users and developers</a></h3>
+            <p>Joule Work introduces a conversational way of working in SAP. Does that replace Fiori? Not at all. Here is how the pieces fit together, and what it means for your apps.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-sap-fiori-joule-work-ux.html" class="read-link" aria-label="Read article: SAP Fiori in the age of Joule: what changes for users and developers">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP S/4HANA Cloud ERP Implementation | Frontino IT</title>
+  <meta name="description" content="Implement SAP S/4HANA Cloud with clarity, control and clean-core discipline. Start with an SAP Cloud Readiness Assessment from Frontino IT.">
+  <link rel="canonical" href="https://frontinoit.com/sap-cloud-erp.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/sap-cloud-erp.html">
+  <meta property="og:title" content="SAP S/4HANA Cloud ERP Implementation | Frontino IT">
+  <meta property="og:description" content="Implement SAP S/4HANA Cloud with clarity, control and clean-core discipline. Start with an SAP Cloud Readiness Assessment from Frontino IT.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP S/4HANA Cloud ERP Implementation | Frontino IT">
+  <meta name="twitter:description" content="Implement SAP S/4HANA Cloud with clarity, control and clean-core discipline. Start with an SAP Cloud Readiness Assessment from Frontino IT.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+        "sameAs": [
+          "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+        ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://frontinoit.com/sap-cloud-erp.html#webpage",
+      "url": "https://frontinoit.com/sap-cloud-erp.html",
+      "name": "SAP S/4HANA Cloud ERP Implementation | Frontino IT",
+      "description": "Implement SAP S/4HANA Cloud with clarity, control and clean-core discipline. Start with an SAP Cloud Readiness Assessment from Frontino IT.",
+      "isPartOf": {
+        "@id": "https://frontinoit.com/#website"
+      },
+      "about": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-01",
+      "breadcrumb": {
+        "@id": "https://frontinoit.com/sap-cloud-erp.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://frontinoit.com/sap-cloud-erp.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "SAP Cloud ERP",
+          "item": "https://frontinoit.com/sap-cloud-erp.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Responsive fixes */
+    @media (max-width: 768px) {
+      .landing-hero .container { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      .why-grid { grid-template-columns: 1fr !important; }
+      .phases-grid { grid-template-columns: 1fr !important; }
+      .ideal-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link active" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero Section -->
+    <section class="hero has-hero-video" id="hero-section" aria-label="SAP Cloud ERP Introduction">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <span class="hero-subtitle">Core ERP Modernisation</span>
+          <h1>SAP Cloud ERP, done right.</h1>
+          <p class="lead">Clean-core implementation for companies that need to scale without adding complexity.</p>
+          <div class="hero-actions">
+            <a href="#assessment-form-section" class="btn btn-primary" id="hero-cta-primary">Start with a readiness assessment</a>
+            <a href="#scope-section" class="btn btn-secondary" id="hero-cta-secondary">Explore our scope</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Legacy Pain Points (The Challenge) -->
+    <section class="section bg-darker" id="challenge-section" aria-labelledby="challenge-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Legacy Obstacles</span>
+          <h2 class="accent-title" id="challenge-title">Why Legacy ERP Systems Fail to Scale</h2>
+          <p>Outdated architectures, fragmented processes, and over-customised codebases slow down decision cycles and increase IT operating costs.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Obstacle 1 -->
+          <article class="service-card reveal" id="obstacle-card-debt">
+            <div>
+              <div class="service-icon" aria-hidden="true" style="background-color: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Legacy ERP Debt</h3>
+              <p>Heavy custom code (Z-transactions) in the core layer blocking regular software upgrades and forcing expensive maintenance cycles.</p>
+            </div>
+          </article>
+
+          <!-- Obstacle 2 -->
+          <article class="service-card reveal" id="obstacle-card-disconnected">
+            <div>
+              <div class="service-icon" aria-hidden="true" style="background-color: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Disconnected Operations</h3>
+              <p>Business units running disjointed processes, with critical procurement and sales decisions scattered across offline spreadsheets and email loops.</p>
+            </div>
+          </article>
+
+          <!-- Obstacle 3 -->
+          <article class="service-card reveal" id="obstacle-card-reporting">
+            <div>
+              <div class="service-icon" aria-hidden="true" style="background-color: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Slow Reporting</h3>
+              <p>No unified source of truth. Reconciling finances and tracking profit margins requires manual downloads and several weeks of review.</p>
+            </div>
+          </article>
+
+          <!-- Obstacle 4 -->
+          <article class="service-card reveal" id="obstacle-card-integrations">
+            <div>
+              <div class="service-icon" aria-hidden="true" style="background-color: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Fragile Integrations</h3>
+              <p>Interfaces built on direct-access database hacks. Any small change in one database table breaks downstream warehouse or billing workflows.</p>
+            </div>
+          </article>
+
+          <!-- Obstacle 5 -->
+          <article class="service-card reveal" id="obstacle-card-masterdata">
+            <div>
+              <div class="service-icon" aria-hidden="true" style="background-color: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Weak Master Data</h3>
+              <p>Duplicate vendors, inconsistent material records, and unvalidated customer data create cascading errors across finance, procurement, and logistics.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Scope & Services -->
+    <section class="section section-light" id="scope-section" aria-labelledby="scope-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Scope</span>
+          <h2 class="accent-title" id="scope-title">Structured ERP Delivery</h2>
+          <p>We execute standard-first SAP implementations following strict project scopes and milestones to secure your target go-live date.</p>
+        </div>
+
+        <div class="methodology-flow">
+          <div class="methodology-step reveal" id="scope-step-1">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Fit-to-Standard</h3>
+            <p>Instead of copying legacy errors, we map your processes directly to SAP's pre-configured Best Practices.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-2">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Configuration</h3>
+            <p>Setting up ledger controls, purchasing flows, intercompany pricing, and universal reporting structures in the ERP.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-3">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Data Migration</h3>
+            <p>Extracting, profiling, cleansing, and loading your legacy data fields into standard SAP templates safely.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-4">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Testing & UAT</h3>
+            <p>Executing unit testing, validation cycles, and structured User Acceptance Testing (UAT) scripts to verify readiness.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-5">
+            <span class="step-num" aria-hidden="true">05</span>
+            <h3>Cutover</h3>
+            <p>Planning and executing the production cutover with a sequenced checklist, clear ownership, and rollback contingencies.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-6">
+            <span class="step-num" aria-hidden="true">06</span>
+            <h3>Go-Live</h3>
+            <p>Supporting the first days in production: monitoring transactions, resolving critical incidents, and stabilizing the new system under real load.</p>
+          </div>
+          <div class="methodology-step reveal" id="scope-step-7">
+            <span class="step-num" aria-hidden="true">07</span>
+            <h3>Hypercare</h3>
+            <p>Structured post-go-live support with a dedicated functional team, incident tracking, user guidance, and a formal handover report.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operational Focus Processes -->
+    <section class="section bg-darker" id="processes-section" aria-labelledby="processes-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Core Processes</span>
+          <h2 class="accent-title" id="processes-title">Processes We Streamline</h2>
+          <p>We focus on the essential workflows that drive finance, procurement, and commerce efficiency.</p>
+        </div>
+
+        <div class="use-cases-grid">
+          <!-- Process 1 -->
+          <article class="use-case-card reveal" id="proc-card-sales">
+            <div class="use-case-content">
+              <div>
+                <span class="use-case-badge">Revenue</span>
+                <h3>Sales, Pricing & Billing</h3>
+                <p>Automate standard billing routines, manage pricing hierarchies, and enable frictionless intercompany sales order workflows.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Process 2 -->
+          <article class="use-case-card reveal" id="proc-card-procurement">
+            <div class="use-case-content">
+              <div>
+                <span class="use-case-badge">Operations</span>
+                <h3>Procurement & Inventory</h3>
+                <p>Enable purchase requisition workflows, govern supplier management, and monitor warehouse transfers with full audit trails.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Process 3 -->
+          <article class="use-case-card reveal" id="proc-card-finance">
+            <div class="use-case-content">
+              <div>
+                <span class="use-case-badge">Finance</span>
+                <h3>Finance & Reporting</h3>
+                <p>Configure the SAP Universal Journal, streamline currency valuations, and run live group financial reporting directly.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Process 4 -->
+          <article class="use-case-card reveal" id="proc-card-intercompany">
+            <div class="use-case-content">
+              <div>
+                <span class="use-case-badge">Intercompany</span>
+                <h3>Intercompany Processes</h3>
+                <p>Set up intercompany billing, stock transfers, and reconciliation flows between legal entities with full audit visibility.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Process 5 -->
+          <article class="use-case-card reveal" id="proc-card-integrations">
+            <div class="use-case-content">
+              <div>
+                <span class="use-case-badge">Integrations</span>
+                <h3>System Integrations</h3>
+                <p>Connect SAP Cloud ERP to third-party logistics, banking, tax, and e-commerce systems via SAP Integration Suite on BTP.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clean Core Differentiator -->
+    <section class="section section-light" id="differentiator-section" aria-labelledby="diff-title">
+      <div class="container">
+        <div class="problem-impact-grid">
+          <div class="reveal" style="max-width: 500px;">
+            <span class="section-label">Our Difference</span>
+            <h2 class="accent-title" id="diff-title">Clean-Core Extensibility</h2>
+            <p class="lead" style="margin-top: 1rem;">We don't just configure ERP screens. We design systems to scale indefinitely.</p>
+            <p>Traditional consultants modify the SAP core code to meet business requests, creating technical debt. Frontino IT applies a strict clean-core methodology. We keep the standard ERP core stable, using SAP BTP (Business Technology Platform) to build custom workflows, side-by-side portals, and integrations outside the ERP.</p>
+          </div>
+          <div class="impact-block reveal" style="align-self: center;">
+            <h3 style="color: var(--color-orange); margin-bottom: 1rem;">Clean-Core Benefits:</h3>
+            <ul class="benefit-list" style="margin-top: 0;">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Worry-free Upgrades:</strong> Quarterly cloud updates execute automatically without breaking custom logic.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Standard Core Stability:</strong> Less database customisation means lower incident rates during transactions.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Governed Integrations:</strong> System interfaces communicate strictly via standard API endpoints on SAP BTP.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assessment Form Section -->
+    <section class="section contact-section" id="assessment-form-section" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <div class="contact-info reveal">
+            <span class="section-label">Readiness Assessment</span>
+            <h2 id="form-title">Request a SAP Cloud Readiness Assessment</h2>
+            <p class="lead">Know if your company is ready for SAP S/4HANA Cloud before committing to a full implementation contract.</p>
+            <p>Our senior architects will analyze your legacy software setup, identify clean-core extension opportunities, and map out a risk-mitigated migration pathway.</p>
+            
+            <div class="info-cards">
+              <div class="info-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <div>
+                  <h4>Deliverable</h4>
+                  <p>A comprehensive landscape evaluation and clean-core migration roadmap.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal" id="form-container">
+            <form id="readiness-form" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="form-name">Full Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" required placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Work Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" required placeholder="jane@enterprise.com">
+              </div>
+              <div class="form-group">
+                <label for="form-company">Company</label>
+                <input type="text" id="form-company" name="company" class="form-input" required placeholder="Acme Logistics">
+              </div>
+              <div class="form-group">
+                <label for="form-system">Current ERP / Systems</label>
+                <select id="form-system" name="system" class="form-input" style="height: 52px;" required>
+                  <option value="" disabled selected>Select your current setup...</option>
+                  <option value="SAP ECC 6.0">SAP ECC 6.0 / Legacy SAP</option>
+                  <option value="Microsoft Dynamics">Microsoft Dynamics / Navision</option>
+                  <option value="Excel & Manual">Excel Sheets & Manual Processes</option>
+                  <option value="Other">Other Legacy System</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-timeline">Desired Timeline</label>
+                <select id="form-timeline" name="timeline" class="form-input" style="height: 52px;" required>
+                  <option value="" disabled selected>Select expected go-live timeline...</option>
+                  <option value="Under 6 months">Within 6 months</option>
+                  <option value="6-12 months">6 to 12 months</option>
+                  <option value="12+ months">More than 12 months</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-challenge">Primary Operational Challenge</label>
+                <textarea id="form-challenge" name="challenge" class="form-textarea" required placeholder="What process bottlenecks or system limitations are you trying to resolve?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">Request Assessment</button>
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

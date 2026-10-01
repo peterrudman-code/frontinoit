@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECC to S/4HANA: On-Premise, Private or Public Cloud? | Frontino IT</title>
+  <meta name="description" content="With ECC maintenance ending, how do you choose between S/4HANA on-premise, private cloud and public cloud? The options, the trade-offs and the key questions.">
+  <link rel="canonical" href="https://frontinoit.com/blog-choose-your-sap-path.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/blog-choose-your-sap-path.html">
+  <meta property="og:title" content="ECC to S/4HANA: On-Premise, Private or Public Cloud? | Frontino IT">
+  <meta property="og:description" content="With ECC maintenance ending, how do you choose between S/4HANA on-premise, private cloud and public cloud? The options, the trade-offs and the key questions.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ECC to S/4HANA: On-Premise, Private or Public Cloud? | Frontino IT">
+  <meta name="twitter:description" content="With ECC maintenance ending, how do you choose between S/4HANA on-premise, private cloud and public cloud? The options, the trade-offs and the key questions.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+      "sameAs": [
+        "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+      ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://frontinoit.com/blog-choose-your-sap-path.html#article",
+      "headline": "ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path",
+      "description": "With ECC maintenance ending, how do you choose between S/4HANA on-premise, private cloud and public cloud? The options, the trade-offs and the key questions.",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "datePublished": "2026-10-01",
+      "dateModified": "2026-10-01",
+      "author": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "mainEntityOfPage": "https://frontinoit.com/blog-choose-your-sap-path.html",
+      "keywords": "SAP ECC end of maintenance, S/4HANA Cloud Public Edition, RISE with SAP, GROW with SAP, S/4HANA on-premise",
+      "articleSection": "SAP Strategy",
+      "wordCount": 429,
+      "inLanguage": "en",
+      "citation": [
+        "https://sapinsider.org/analyst-insights/will-sap-offer-an-extended-maintenance-alternative/",
+        "https://e3mag.com/en/sap-business-suite-2033/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://frontinoit.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path",
+          "item": "https://frontinoit.com/blog-choose-your-sap-path.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Article header -->
+    <section class="hero article-hero has-hero-video" id="hero-section" aria-label="Article">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content reveal">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span aria-hidden="true">/</span><a href="blog.html">Blog</a><span aria-hidden="true">/</span><span>SAP Strategy</span>
+          </nav>
+          <span class="hero-subtitle">SAP Strategy</span>
+          <h1>ECC, S/4HANA on-premise, private or public cloud: how to choose your SAP path</h1>
+          <div class="article-meta article-meta-hero">
+            <span>Frontino IT</span>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <time datetime="2026-10-01">October 2026</time>
+            <span class="article-meta-dot" aria-hidden="true"></span>
+            <span>3 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article body -->
+    <section class="section article-section" aria-label="Article content">
+      <div class="container">
+        <article class="article-body">
+<p class="article-intro">Every company running SAP ECC faces the same question: where to go next, and when. The answer is not the same for everyone, and the market is not only about public cloud. Here is a practical way to look at the options.</p>
+
+<h2>The deadline that frames the decision</h2>
+<p>SAP's mainstream maintenance for SAP ECC 6.0 (enhancement packages 6 to 8) ends on 31 December 2027. Optional extended maintenance is available until the end of 2030, at additional cost. Under RISE with SAP, a transition option can stretch support to 2033, but only for selected customers that meet specific conditions, so it is not a general extension. A move to S/4HANA takes time to plan and deliver, so for most companies the decision belongs on the agenda now, even if the go-live is years away.</p>
+
+<h2>The main options</h2>
+<ul>
+  <li><strong>SAP S/4HANA Cloud Public Edition</strong> (typically through GROW with SAP). A standardised, SAP-managed SaaS ERP with regular upgrades. Fastest to adopt, and best suited to companies that can work with standard processes.</li>
+  <li><strong>SAP S/4HANA Cloud Private Edition</strong> (typically through RISE with SAP). More flexibility and room for specific requirements, with infrastructure and operations managed in the cloud.</li>
+  <li><strong>SAP S/4HANA on-premise.</strong> Full control over the system, the infrastructure and the upgrade schedule, with the responsibility for running it.</li>
+  <li><strong>Staying on ECC for now.</strong> A valid short-term choice if you use the time well: cleaning up custom code, modernising integrations and preparing data.</li>
+</ul>
+
+<h2>Five questions that decide the right path</h2>
+<ol>
+  <li><strong>How standard are your processes?</strong> If your differentiation lies in products and service rather than in ERP processes, public cloud becomes very attractive.</li>
+  <li><strong>How much custom code do you rely on?</strong> Heavy, business-critical customisation points to private cloud or on-premise, at least as a first step.</li>
+  <li><strong>What does your IT team want to run?</strong> Public cloud removes most of the operational work. On-premise keeps it in-house.</li>
+  <li><strong>How fast do you need to move?</strong> Standard-first public cloud projects can go live much faster than full transformations.</li>
+  <li><strong>How complex is your integration landscape?</strong> Many interfaces call for an integration strategy, usually on SAP BTP, whatever the deployment model.</li>
+</ol>
+<div class="article-callout"><strong>Whatever the path, the principles are the same.</strong> Keep the core clean, build extensions and integrations on SAP BTP, and treat data quality as part of the project rather than an afterthought.</div>
+
+<h2>Start with facts, not with a product</h2>
+<p>The best decisions start from an honest picture of your current landscape: processes, custom code, interfaces and data. A short, structured readiness assessment gives you that picture, and a clear recommendation, before you commit budget to a full programme.</p>
+<div class="article-sources"><h2>Sources</h2><ul><li><a href="https://sapinsider.org/analyst-insights/will-sap-offer-an-extended-maintenance-alternative/" target="_blank" rel="noopener noreferrer">SAPinsider: Will SAP offer an extended maintenance alternative?</a></li><li><a href="https://e3mag.com/en/sap-business-suite-2033/" target="_blank" rel="noopener noreferrer">E3 Magazine: SAP Business Suite 2033</a></li></ul></div>
+
+          <aside class="article-cta">
+            <p>Want a clear recommendation for your landscape?</p>
+            <div class="article-cta-actions">
+              <a href="assessment.html" class="btn btn-primary">Request a readiness assessment</a>
+              <a href="contact.html" class="btn btn-secondary">Talk to us</a>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- More articles -->
+    <section class="section bg-navy" aria-labelledby="more-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Keep Reading</span>
+          <h2 class="accent-title" id="more-title">More from the blog</h2>
+        </div>
+        <div class="articles-grid" role="list">
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-ai">Enterprise AI</span>
+            <h3><a href="blog-sap-autonomous-enterprise-joule-agents.html">SAP&#x27;s Autonomous Enterprise: what Joule agents mean for your SAP landscape</a></h3>
+            <p>At Sapphire 2026 SAP presented more than 50 Joule Assistants and over 200 agents. What was announced, what is already available, and what it takes to be ready.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-sap-autonomous-enterprise-joule-agents.html" class="read-link" aria-label="Read article: SAP&#x27;s Autonomous Enterprise: what Joule agents mean for your SAP landscape">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-btp">SAP Fiori &amp; UX</span>
+            <h3><a href="blog-sap-fiori-joule-work-ux.html">SAP Fiori in the age of Joule: what changes for users and developers</a></h3>
+            <p>Joule Work introduces a conversational way of working in SAP. Does that replace Fiori? Not at all. Here is how the pieces fit together, and what it means for your apps.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-sap-fiori-joule-work-ux.html" class="read-link" aria-label="Read article: SAP Fiori in the age of Joule: what changes for users and developers">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+          <article class="article-card reveal" role="listitem">
+            <span class="article-tag tag-clean-core">Data &amp; Cloud</span>
+            <h3><a href="blog-sap-business-data-cloud-ai.html">SAP Business Data Cloud: why your data strategy now decides your AI results</a></h3>
+            <p>AI agents are only as good as the data they can reach. A clear look at SAP Business Data Cloud, its new partner integrations, and how to get your data ready.</p>
+            <div class="article-card-footer">
+              <div class="article-meta">
+                <span>October 2026</span>
+                <span class="article-meta-dot" aria-hidden="true"></span>
+                <span>3 min read</span>
+              </div>
+              <a href="blog-sap-business-data-cloud-ai.html" class="read-link" aria-label="Read article: SAP Business Data Cloud: why your data strategy now decides your AI results">Read <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

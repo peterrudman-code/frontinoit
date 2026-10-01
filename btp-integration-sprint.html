@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP BTP Integration Sprint | Frontino IT</title>
+  <meta name="description" content="Design or implement one critical SAP integration with SAP Integration Suite: clear scope, documentation, monitoring and error runbooks.">
+  <link rel="canonical" href="https://frontinoit.com/btp-integration-sprint.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Frontino IT Consulting GmbH">
+  <meta name="theme-color" content="#14213D">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Frontino IT">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://frontinoit.com/btp-integration-sprint.html">
+  <meta property="og:title" content="SAP BTP Integration Sprint | Frontino IT">
+  <meta property="og:description" content="Design or implement one critical SAP integration with SAP Integration Suite: clear scope, documentation, monitoring and error runbooks.">
+  <meta property="og:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Frontino IT: SAP consulting and product engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP BTP Integration Sprint | Frontino IT">
+  <meta name="twitter:description" content="Design or implement one critical SAP integration with SAP Integration Suite: clear scope, documentation, monitoring and error runbooks.">
+  <meta name="twitter:image" content="https://frontinoit.com/assets/images/og-frontino.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logos/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/logos/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="preload" as="image" href="assets/video/hero-background-poster.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://frontinoit.com/#organization",
+      "name": "Frontino IT Consulting GmbH",
+      "alternateName": "Frontino IT",
+      "url": "https://frontinoit.com/",
+      "logo": "https://frontinoit.com/assets/images/logos/frontino-it_logo_stacked_navy.png",
+      "image": "https://frontinoit.com/assets/images/og-frontino.jpg",
+      "description": "European SAP consulting and product engineering company: SAP implementations, SAP BTP, clean-core architecture, integration, automation and enterprise AI.",
+      "email": "info@frontinoit.com",
+      "telephone": "+49 155 69271302",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Johannes-Neuhaeusler-Straße 14",
+        "postalCode": "81929",
+        "addressLocality": "München",
+        "addressCountry": "DE"
+      },
+      "areaServed": "Europe",
+      "vatID": "DE461012805",
+        "sameAs": [
+          "https://www.linkedin.com/company/frontino-it-consulting-gmbh/"
+        ],
+      "knowsAbout": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "Clean core",
+        "SAP Integration Suite",
+        "SAP Build Process Automation",
+        "GROW with SAP",
+        "Enterprise AI",
+        "SAP hypercare"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://frontinoit.com/#website",
+      "url": "https://frontinoit.com/",
+      "name": "Frontino IT",
+      "publisher": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://frontinoit.com/btp-integration-sprint.html#webpage",
+      "url": "https://frontinoit.com/btp-integration-sprint.html",
+      "name": "SAP BTP Integration Sprint | Frontino IT",
+      "description": "Design or implement one critical SAP integration with SAP Integration Suite: clear scope, documentation, monitoring and error runbooks.",
+      "isPartOf": {
+        "@id": "https://frontinoit.com/#website"
+      },
+      "about": {
+        "@id": "https://frontinoit.com/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-01",
+      "breadcrumb": {
+        "@id": "https://frontinoit.com/btp-integration-sprint.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://frontinoit.com/btp-integration-sprint.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://frontinoit.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "BTP Integration Sprint",
+          "item": "https://frontinoit.com/btp-integration-sprint.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://frontinoit.com/btp-integration-sprint.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does my company need BTP already licensed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A BTP tenant with Integration Suite is required. If you do not have one yet, we can advise on the right license and help you set up the environment before the sprint starts. SAP S/4HANA Cloud Public Edition includes BTP entitlements that cover many integration scenarios."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What counts as \"one integration\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One integration scenario covers a single data flow between two systems — for example, SAP Orders to a logistics WMS, or bank statement import from a banking API. Complex bidirectional flows or scenarios with multiple message types may require a broader scope discussion. We clarify this during the scoping session at no cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we design the integration first and build it later?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer a design-only sprint that delivers the mapping specification, technical architecture, and implementation guide — without the build. This is useful when your internal team will implement it or when you need a design to evaluate before budget approval."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if scope changes during the sprint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Scope is locked after the scoping session sign-off. Any additions are tracked as change requests and addressed in a follow-on sprint — never added to the current one without a formal scope and timeline discussion. This protects both delivery quality and your budget."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can this be delivered for a partner's client project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We deliver BTP Integration Sprints as a subcontractor or co-delivery partner for SAP partners and system integrators. We work under your project governance and can deliver under your branding if required. Contact us to discuss the engagement model."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .landing-hero {
+      padding: 10rem 0 6rem;
+      background: radial-gradient(ellipse at 60% 0%, rgba(20, 33, 61, 0.6) 0%, transparent 70%), var(--color-black);
+    }
+    .landing-hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 1024px) {
+      .landing-hero .container { grid-template-columns: 1fr; gap: 3rem; }
+    }
+    .offer-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(252, 163, 17, 0.12);
+      border: 1px solid rgba(252, 163, 17, 0.3);
+      color: var(--color-orange);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    .deliverables-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .deliverables-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--color-gray);
+    }
+    .deliverables-list li svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.15rem; }
+    .deliverables-list li strong { color: var(--color-white); }
+    .phases-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .phase-card {
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-card-border);
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+    }
+    .phase-number { font-size: 2rem; font-weight: 700; color: var(--color-orange); opacity: 0.4; line-height: 1; margin-bottom: 0.75rem; }
+    .phase-card h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); margin-bottom: 0.5rem; }
+    .phase-card p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+    .phase-duration { font-size: 0.75rem; font-weight: 700; color: var(--color-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 1rem; }
+    .ideal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+    }
+    .ideal-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-card-border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+    }
+    .ideal-item svg { color: var(--color-orange); flex-shrink: 0; margin-top: 0.1rem; }
+    .ideal-item p { font-size: 0.9rem; color: var(--color-gray); margin: 0; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 2.5rem; border: 1px solid var(--color-card-border); border-radius: 8px; overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--color-card-border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question { width: 100%; background: none; border: none; padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; text-align: left; color: var(--color-white); font-size: 0.95rem; font-weight: 600; font-family: inherit; transition: background 0.2s; }
+    .faq-question:hover { background: rgba(255,255,255,0.03); }
+    .faq-question svg { flex-shrink: 0; color: var(--color-orange); transition: transform 0.25s ease; }
+    .faq-question[aria-expanded="true"] svg { transform: rotate(45deg); }
+    .faq-answer { display: none; padding: 0 2rem 1.5rem; font-size: 0.9rem; color: var(--color-gray); line-height: 1.7; }
+    .faq-answer.open { display: block; }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
+    .why-item { display: flex; flex-direction: column; gap: 0.75rem; }
+    .why-item h4 { font-size: 1rem; font-weight: 600; color: var(--color-white); }
+    .why-item p { font-size: 0.875rem; color: var(--color-gray); margin: 0; }
+
+    .integration-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+    .integration-type-pill {
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-card-border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: var(--color-gray);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .integration-type-pill svg { color: var(--color-orange); flex-shrink: 0; }
+  
+    /* Responsive fixes */
+    @media (max-width: 768px) {
+      .landing-hero .container { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+      .deliverables-section-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+      .stats-hero-grid { grid-template-columns: 1fr 1fr !important; }
+      .timeline-strip { flex-direction: column; }
+      .days-grid { grid-template-columns: 1fr !important; }
+      .tiers-grid { grid-template-columns: 1fr !important; }
+      .coverage-grid { grid-template-columns: 1fr !important; }
+      .war-room-grid { grid-template-columns: 1fr !important; }
+      .coverage-area-grid { grid-template-columns: 1fr !important; }
+      .why-grid { grid-template-columns: 1fr !important; }
+      .phases-grid { grid-template-columns: 1fr !important; }
+      .ideal-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (max-width: 480px) {
+      .stats-hero-grid { grid-template-columns: 1fr !important; }
+      .offer-tag { font-size: 0.65rem; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link" id="header-logo-link" aria-label="Frontino IT Homepage">
+        <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="header-logo-img" width="186" height="52">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+      </button>
+      <nav class="nav-bar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="sap-cloud-erp.html" class="nav-link" id="nav-link-sap-cloud">SAP Cloud ERP</a></li>
+          <li><a href="grow-fast.html" class="nav-link" id="nav-link-grow-fast">GROW Fast</a></li>
+          <li><a href="sap-btp-services.html" class="nav-link active" id="nav-link-sap-btp">SAP BTP Services</a></li>
+          <li><a href="solutions.html" class="nav-link" id="nav-link-solutions">Solutions</a></li>
+          <li><a href="partner.html" class="nav-link" id="nav-link-partner">Partners</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="contact.html" class="btn btn-secondary" id="nav-cta-contact">Talk to us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- Hero -->
+    <section class="landing-hero has-hero-video" id="hero-section" aria-label="BTP Integration Sprint">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-background-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero-background.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="reveal">
+          <div class="offer-tag">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP BTP Services
+          </div>
+          <h1>Design or implement one critical SAP integration — with clear scope, documentation, and monitoring.</h1>
+          <p class="lead" style="margin-top: 1.5rem;">The BTP Integration Sprint is a focused, fixed-scope engagement to design or build one SAP integration using SAP Integration Suite on BTP — from mapping to go-live to runbook, in weeks not quarters.</p>
+          <div class="hero-actions" style="margin-top: 2.5rem;">
+            <a href="#sprint-form" class="btn btn-primary" id="hero-cta-primary">Plan your integration sprint</a>
+            <a href="#how-it-works" class="btn btn-secondary" id="hero-cta-secondary">See how it works</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Pain -->
+    <section class="section bg-darker" id="pain-section" aria-labelledby="pain-title">
+      <div class="container">
+        <div class="problem-impact-grid">
+          <div class="problem-block reveal">
+            <span class="section-label">The Problem</span>
+            <h2 id="pain-title">Fragile integrations are one of the most common SAP failure points.</h2>
+            <p>Most SAP interfaces were built quickly, without documentation, error monitoring, or upgrade safety in mind. They work — until they don't.</p>
+            <ul class="pain-list" style="margin-top: 2rem;">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Custom-coded interfaces that break with every SAP update or patch</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>No error monitoring — failures are discovered hours or days later</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Manual file transfers and FTP workarounds replacing real integrations</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>No documentation — only the original developer knows how the interface works</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>Backlog of integration requests that IT cannot deliver fast enough</span>
+              </li>
+            </ul>
+          </div>
+          <div class="impact-block reveal" style="align-self: center;">
+            <span class="section-label">The Outcome</span>
+            <h2 class="accent-title" style="font-size: clamp(1.3rem, 2.5vw, 1.8rem);">A stable, monitored, documented interface — built on standard SAP BTP.</h2>
+            <ul class="benefit-list" style="margin-top: 1.5rem;">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Standard iFlow built on SAP Integration Suite — upgrade-safe by design</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Real-time error alerts and monitoring dashboard</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complete technical documentation and operations runbook</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>API mapping and field-level documentation for every data exchange</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Knowledge transfer so your team can operate it independently</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integration Types -->
+    <section class="section" id="types-section" aria-labelledby="types-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Scope</span>
+          <h2 class="accent-title" id="types-title">What types of integrations we cover.</h2>
+          <p>One sprint, one integration. We focus on standard SAP Integration Suite iFlows connecting SAP to external systems — or SAP systems to each other.</p>
+        </div>
+        <div class="integration-types reveal">
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → Logistics / WMS
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → Banking / Payment
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → E-commerce / EDI
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → Tax / Compliance
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → CRM / Salesforce
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP ECC → SAP Cloud
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → Custom REST/SOAP APIs
+          </div>
+          <div class="integration-type-pill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            SAP → HR / Payroll systems
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section bg-navy" id="how-it-works" aria-labelledby="hiw-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">The Process</span>
+          <h2 class="accent-title" id="hiw-title">How the sprint is structured.</h2>
+          <p>Five focused phases. Fixed scope. Your team spends a few hours in workshops — we handle the build and documentation.</p>
+        </div>
+        <div class="phases-grid reveal">
+          <div class="phase-card">
+            <div class="phase-number">01</div>
+            <h4>Scoping Session</h4>
+            <p>We define the integration scenario, data flows, source/target systems, error handling rules, and acceptance criteria in a structured 2-hour workshop.</p>
+            <div class="phase-duration">Day 1–2</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">02</div>
+            <h4>Design & Mapping</h4>
+            <p>We produce the field-level mapping specification, API authentication approach, and technical architecture document for sign-off before any build starts.</p>
+            <div class="phase-duration">Days 3–5</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">03</div>
+            <h4>Build & Configure</h4>
+            <p>We build the iFlow on SAP Integration Suite, configure error alerts, set up monitoring, and execute unit tests in the development environment.</p>
+            <div class="phase-duration">Days 6–12</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">04</div>
+            <h4>Testing & UAT</h4>
+            <p>End-to-end testing with realistic data volumes, edge case validation, error scenario simulation, and business sign-off on the integration behavior.</p>
+            <div class="phase-duration">Days 13–16</div>
+          </div>
+          <div class="phase-card">
+            <div class="phase-number">05</div>
+            <h4>Go-Live & Handover</h4>
+            <p>Production deployment, live monitoring activation, runbook delivery, and a knowledge transfer session for your team to operate the interface independently.</p>
+            <div class="phase-duration">Days 17–20</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables -->
+    <section class="section bg-darker" id="deliverables-section" aria-labelledby="deliv-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What You Receive</span>
+          <h2 class="accent-title" id="deliv-title">Everything you need to own the integration.</h2>
+        </div>
+        <div class="problem-impact-grid reveal">
+          <ul class="deliverables-list">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Production-ready iFlow</strong> — deployed on SAP Integration Suite in your BTP tenant</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Field-level mapping document</strong> — complete source-to-target data specification</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Operations runbook</strong> — step-by-step guide for monitoring, error handling, and restart procedures</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Monitoring configuration</strong> — error alerts, retry logic, and dashboard access for your operations team</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>UAT sign-off package</strong> — test scripts, results log, and acceptance documentation</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span><strong>Knowledge transfer session</strong> — 90-minute walkthrough with your IT team on the interface architecture and how to modify it</span>
+            </li>
+          </ul>
+          <div style="align-self: center;">
+            <div class="hero-card-glow" style="max-width: 100%;">
+              <div class="service-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+              </div>
+              <h3>Fixed scope. No open-ended billing.</h3>
+              <p>The sprint covers one integration scenario with a defined scope boundary agreed before work starts. Additional scenarios can be planned as follow-on sprints — never as scope creep inside a running engagement.</p>
+              <p style="margin-top: 0.75rem; color: var(--color-orange); font-size: 0.9rem; font-weight: 600;">Most clients run 2–3 sprints over 6–8 weeks to replace a full legacy integration layer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ideal For -->
+    <section class="section" id="ideal-for-section" aria-labelledby="ideal-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Ideal For</span>
+          <h2 class="accent-title" id="ideal-title">This sprint is right for you if...</h2>
+        </div>
+        <div class="ideal-grid reveal">
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You have a specific SAP interface that is fragile, undocumented, or causing recurring incidents</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You are migrating to SAP Cloud and need to re-build legacy interfaces on BTP before go-live</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You want to connect SAP to a new third-party system and need a clean, documented approach from day one</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You have BTP licensed but no in-house Integration Suite expertise to build production-quality iFlows</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You are an SAP partner who needs a fast, delivery-ready integration for a client project without adding headcount</p>
+          </div>
+          <div class="ideal-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p>You need a replicable integration pattern your internal team can use as the standard for future interfaces</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Frontino IT -->
+    <section class="section bg-navy" id="why-section" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Why Frontino IT</span>
+          <h2 class="accent-title" id="why-title">Integration architects, not generalists.</h2>
+          <p>SAP Integration Suite is our primary delivery tool. We have built and operated iFlows across industries and integration patterns.</p>
+        </div>
+        <div class="why-grid reveal">
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+            </div>
+            <h4>Standard-first approach</h4>
+            <p>We use SAP Integration Suite standard adapters and patterns — no custom middleware, no proprietary tooling that creates new dependencies.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            </div>
+            <h4>Documentation as a deliverable</h4>
+            <p>Every sprint ends with runbooks and technical specs — not because we were asked, but because undocumented integrations are a liability we do not leave behind.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>Clean-core by default</h4>
+            <p>All interfaces are designed outside the SAP core via BTP — so ERP upgrades never break your integration layer and your system stays upgrade-safe.</p>
+          </div>
+          <div class="why-item">
+            <div class="service-icon" aria-hidden="true" style="width: 44px; height: 44px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h4>Reusable patterns</h4>
+            <p>We design integrations using reusable iFlow templates and naming conventions — so your second and third sprints are faster than the first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-darker" id="faq-section" aria-labelledby="faq-title">
+      <div class="container" style="max-width: 820px;">
+        <div class="section-header reveal">
+          <span class="section-label">Common Questions</span>
+          <h2 class="accent-title" id="faq-title">Frequently asked questions.</h2>
+        </div>
+        <div class="faq-list reveal" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1-answer">
+              Does my company need BTP already licensed?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-1-answer">
+              A BTP tenant with Integration Suite is required. If you do not have one yet, we can advise on the right license and help you set up the environment before the sprint starts. SAP S/4HANA Cloud Public Edition includes BTP entitlements that cover many integration scenarios.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2-answer">
+              What counts as "one integration"?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-2-answer">
+              One integration scenario covers a single data flow between two systems — for example, SAP Orders to a logistics WMS, or bank statement import from a banking API. Complex bidirectional flows or scenarios with multiple message types may require a broader scope discussion. We clarify this during the scoping session at no cost.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3-answer">
+              Can we design the integration first and build it later?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-3-answer">
+              Yes. We offer a design-only sprint that delivers the mapping specification, technical architecture, and implementation guide — without the build. This is useful when your internal team will implement it or when you need a design to evaluate before budget approval.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4-answer">
+              What happens if scope changes during the sprint?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-4-answer">
+              Scope is locked after the scoping session sign-off. Any additions are tracked as change requests and addressed in a follow-on sprint — never added to the current one without a formal scope and timeline discussion. This protects both delivery quality and your budget.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5-answer">
+              Can this be delivered for a partner's client project?
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+            <div class="faq-answer" id="faq-5-answer">
+              Yes. We deliver BTP Integration Sprints as a subcontractor or co-delivery partner for SAP partners and system integrators. We work under your project governance and can deliver under your branding if required. Contact us to discuss the engagement model.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section class="section contact-section" id="sprint-form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-label">Plan Your Sprint</span>
+            <h2 id="form-title">Tell us about your integration and we will plan the sprint.</h2>
+            <p class="lead">Describe the systems involved and the data you need to exchange. We will confirm feasibility and scope within one business day.</p>
+            <div class="info-cards">
+              <div class="info-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div>
+                  <h4>Timeline</h4>
+                  <p>2–4 weeks from scoping to go-live for a standard integration scenario.</p>
+                </div>
+              </div>
+              <div class="info-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                <div>
+                  <h4>Deliverable</h4>
+                  <p>Live iFlow + field mapping + runbook + monitoring + UAT package.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal">
+            <form id="sprint-form-submit" action="#" method="POST" novalidate>
+              <div class="form-group">
+                <label for="form-name">Full Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" required placeholder="Alex Mueller">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Work Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" required placeholder="alex@company.com">
+              </div>
+              <div class="form-group">
+                <label for="form-company">Company</label>
+                <input type="text" id="form-company" name="company" class="form-input" required placeholder="Acme Industries GmbH">
+              </div>
+              <div class="form-group">
+                <label for="form-system">Your SAP System</label>
+                <select id="form-system" name="system" class="form-input" style="height: 52px;" required>
+                  <option value="" disabled selected>Select your SAP core...</option>
+                  <option value="SAP S/4HANA Cloud Public">SAP S/4HANA Cloud Public Edition</option>
+                  <option value="SAP S/4HANA Private/On-Prem">SAP S/4HANA Private / On-Premise</option>
+                  <option value="SAP ECC 6.0">SAP ECC 6.0</option>
+                  <option value="Multiple SAP systems">Multiple SAP systems</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-usecase">Describe the integration scenario</label>
+                <textarea id="form-usecase" name="usecase" class="form-textarea" required placeholder="Which systems need to be connected? What data flows between them? Is this a new integration or a replacement of an existing one?"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="form-outcome">What outcome are you looking for?</label>
+                <textarea id="form-outcome" name="outcome" class="form-textarea" required placeholder="e.g. Eliminate manual file transfers, replace fragile custom interface, connect new third-party logistics system to SAP..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">Plan the Integration Sprint</button>
+              <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logos/frontino-it_logo_horizontal_white.png" alt="Frontino IT Consulting" class="logo-img" id="footer-logo-img" width="186" height="52">
+          <p>SAP implementation, clean-core extensions, BTP, integration, automation and governed AI — across cloud, private and on-premise landscapes.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sap-cloud-erp.html">SAP Cloud ERP</a></li>
+            <li><a href="grow-fast.html">GROW Fast</a></li>
+            <li><a href="sap-btp-services.html">SAP BTP Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="partner.html">Partners</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-details">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Serving clients across Europe</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span><a href="mailto:info@frontinoit.com">info@frontinoit.com</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span><a href="https://calendar.app.google/A2hixHhQYfkKJwY27" class="footer-booking" target="_blank" rel="noopener noreferrer">Book a meeting</a></span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+              <span><a href="https://www.linkedin.com/company/frontino-it-consulting-gmbh/" class="footer-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom" style="flex-wrap: wrap; gap: 1rem;">
+        <p>&copy; 2026 Frontino IT. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" id="privacy-link">Privacy Policy</a>
+          <a href="legal.html" id="legal-link">Legal Notice / Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+        });
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
